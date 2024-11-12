@@ -30,14 +30,39 @@ const makeTitle = title
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
+    {/* Icons */}
+    <link rel="icon" href ="https://wetrocloud.com/favicon.ico"/>
+    <link rel="shortcut icon" href ="https://wetrocloud.com/favicon.ico"/>
+    <link rel="icon" href="https://wetrocloud.com/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://wetrocloud.com/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="canonical" href="https://wetrocloud.com/"/>
 
-    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
+    {/* Twitter OG metadata */}
+    <meta property="twitter:title" content="Wetrocloud - free AI assistant" />
+    <meta property="twitter:description" content="Wetrocloud is a digital assistant designed to provide helpful and informative responses to your questions and inquiries with the help of artificial intelligence." />
+    <meta property="twitter:image" content="https://wetrocloud.com/meta-banner.jpg" />
+    <meta name="twitter:image:summary_photo_image:src" content="https://wetrocloud.com/meta-banner.jpg"/>
+    <meta name="twitter:image:photo_image_full_size:src" content="https://wetrocloud.com/meta-banner.jpg"/>
+    <meta name="twitter:image:thumbnail_image:src" content="https://wetrocloud.com/meta-banner.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="https://wetrocloud.com"/>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CP7XLD7HG1"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CP7XLD7HG1');
+    </script>
     <SEO
       title={makeTitle}
       description="Astroship is a starter website template for Astro built with TailwindCSS."

@@ -1,13 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M22.25 4h-8.5a1 1 0 0 0-.96.73l-5.54 19.4a.5.5 0 0 0 .62.62l5.05-1.44a2 2 0 0 0 1.38-1.4l3.22-11.66a.5.5 0 0 1 .96 0l3.22 11.67a2 2 0 0 0 1.38 1.39l5.05 1.44a.5.5 0 0 0 .62-.62l-5.54-19.4a1 1 0 0 0-.96-.73Z"/>
-  <path fill="url(#gradient)" d="M18 28a7.63 7.63 0 0 1-5-2c-1.4 2.1-.35 4.35.6 5.55.14.17.41.07.47-.15.44-1.8 2.93-1.22 2.93.6 0 2.28.87 3.4 1.72 3.81.34.16.59-.2.49-.56-.31-1.05-.29-2.46 1.29-3.25 3-1.5 3.17-4.83 2.5-6-.67.67-2.6 2-5 2Z"/>
-  <defs>
-    <linearGradient id="gradient" x1="16" x2="16" y1="32" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#000"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-	<style>
-    @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
-  </style>
+<svg width="157" height="141" viewBox="0 0 157 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="157" height="141" rx="10" fill="white"/>
+<path d="M79.7321 123C78.9623 124.333 77.0378 124.333 76.268 123L25.1725 34.5C24.4027 33.1667 25.3649 31.5 26.9045 31.5L129.095 31.5C130.635 31.5 131.597 33.1667 130.828 34.5L79.7321 123Z" fill="#3B82F6"/>
+<ellipse cx="78.0001" cy="62.9991" rx="15.12" ry="15.12" transform="rotate(-180 78.0001 62.9991)" fill="white"/>
 </svg>
