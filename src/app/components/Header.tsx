@@ -15,7 +15,7 @@ export default function HeaderComponent() {
         <a href="#" className="py-2 text-gray-800 hover:text-default">Developer</a>
         <a href="#" className="py-2 text-gray-800 hover:text-default">Blog</a>
         <a href="#" role='button' className="border-l border-gray-200 pl-6 py-2 text-gray-800 hover:text-default">Register</a>
-        <button role='button' className="bg-black text-white px-6 py-2 rounded-sm hover:bg-blue-950">Login</button>
+        <button className="bg-black text-white px-6 py-2 rounded-sm hover:bg-blue-950">Login</button>
       </div>
     </div>
   </nav>
