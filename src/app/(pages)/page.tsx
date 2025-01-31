@@ -37,9 +37,9 @@ export default function Home() {
             <p className="text-gray-500 text-lg mt-5 mb-8 max-w-xl text-center">
               Empower your business with tailored AI solutions. Increase work rate and efficiency by 600%.
             </p>
-            <div className="flex space-x-4">
-              <button className="bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950">Get started for free</button>
-              <button className="bg-white text-blue-950 px-6 py-3 rounded-sm border border-blue-950">Book a demo</button>
+            <div className="block sm:flex space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 items-center justify-center max-width-90 mx-auto">
+              <button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950">Get started for free</button>
+              <button className="w-full sm:w-auto bg-white text-blue-950 px-6 py-3 rounded-sm border border-blue-950">Book a demo</button>
             </div>
 
             {/* Hero image */}

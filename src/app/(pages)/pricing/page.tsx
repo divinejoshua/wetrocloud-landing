@@ -31,7 +31,7 @@ export default function Home() {
                   <div className="container mx-auto">
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg h-100 flex flex-col justify-between">
+                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
                         <div>
                           <Image src={developerIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
                           <h3 className="text-lg font-medium text-gray-800 mb-4">Developer</h3>
@@ -42,7 +42,7 @@ export default function Home() {
                         <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Get started</button>
                         </div>
 
-                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg h-100 flex flex-col justify-between">
+                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
                         <div>
                           <Image src={startupIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
                           <h3 className="text-lg font-medium text-gray-800 mb-4">Startup</h3>
@@ -55,7 +55,7 @@ export default function Home() {
                         <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Get started</button>
                         </div>
 
-                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg h-100 flex flex-col justify-between">
+                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
                         <div>
                           <Image src={enterpriseIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
                           <h3 className="text-lg font-medium text-gray-800 mb-4">Enterprise</h3>
