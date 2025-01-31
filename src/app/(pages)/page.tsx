@@ -81,7 +81,7 @@ export default function Home() {
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
                         <div>
                           <Image src={textGenerationIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Text to Audio</h3>
+                          <h3 className="text-lg font-medium text-gray-800 mb-4">Text generation</h3>
                           <p className="text-gray-600">
                           Generate natural-sounding audio from text with seamless Text-to-Audio APIs. Perfect for voice assistants, audiobooks, and interactive applications.
                           </p>

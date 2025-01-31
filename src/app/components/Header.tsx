@@ -20,6 +20,7 @@ export default function HeaderComponent() {
       <div className="flex space-x-10">
         <Link href="/pricing" className={`py-2 hover:text-default ${pathname === '/pricing' ? 'text-blue-500' : 'text-gray-800'}`}>Pricing</Link>
         <a href="#" className="py-2 text-gray-800 hover:text-default">Developer</a>
+        <a href="#" className="py-2 text-gray-800 hover:text-default">Playground</a>
         <a href="#" className="py-2 text-gray-800 hover:text-default">Blog</a>
         <a href="#" role='button' className="border-l border-gray-200 pl-6 py-2 text-gray-800 hover:text-default">Register</a>
         <button className="bg-black text-white px-6 py-2 rounded-sm hover:bg-blue-950">Login</button>
