@@ -162,6 +162,55 @@ export default function Home() {
 
             </section>
 
+
+            {/* Why use wetrocloud */}
+            <section className="mt-24">
+            <h3 className="text-4xl font-medium text-center">Why use wetrocloud?</h3>
+
+              <div className="container mx-auto mt-20 max-w-3xl">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                      <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg h-80 flex flex-col justify-between">
+                        <div>
+                          <h3 className="text-lg font-medium text-gray-800 mb-4">Privacy and security</h3>
+                          <p className="text-gray-600 mt-6">
+                          WetroCloud ensures top-tier privacy and security, keeping your data protected with robust encryption and compliance standards. Your sensitive information remains confidential, giving you full control over access and usage.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg h-80 flex flex-col justify-between">
+                        <div>
+                          <h3 className="text-lg font-medium text-gray-800 mb-4">Personalized Customer Experience</h3>
+                          <p className="text-gray-600">
+                          AI-powered tools tailor recommendations, marketing messages, and support responses to individual customer needs, improving satisfaction and engagement.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg h-80 flex flex-col justify-between">
+                        <div>
+                          <h3 className="text-lg font-medium text-gray-800 mb-4">Cost Optimisation</h3>
+                          <p className="text-gray-600">
+                          Automating processes and optimizing resource allocation reduce operational expenses, increasing overall profitability.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg h-80 flex flex-col justify-between">
+                        <div>
+                          <h3 className="text-lg font-medium text-gray-800 mb-4">Scalability</h3>
+                          <p className="text-gray-600">
+                          WetroCloud offers seamless scalability to handle growing workloads efficiently. Easily expand resources as your needs evolve without compromising performance.
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+            </section>
+
+            
+
           </main>
     </div>
   );
