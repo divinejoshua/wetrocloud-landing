@@ -83,7 +83,7 @@ export default function Home() {
                           <Image src={textGenerationIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
                           <h3 className="text-lg font-medium text-gray-800 mb-4">Text generation</h3>
                           <p className="text-gray-600">
-                          Generate natural-sounding audio from text with seamless Text-to-Audio APIs. Perfect for voice assistants, audiobooks, and interactive applications.
+                          Text generation allows AI systems to create human-like written content by predicting and generating sequences of words based on given prompts.
                           </p>
                         </div>
                         <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button>
@@ -92,9 +92,9 @@ export default function Home() {
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
                         <div>
                           <Image src={imageGenerationIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Video Transcriber</h3>
+                          <h3 className="text-lg font-medium text-gray-800 mb-4">Image generation</h3>
                           <p className="text-gray-600">
-                          Accurately convert video speech to text with advanced Video Transcriber APIs. Ideal for captions, subtitles, and content indexing.
+                          Generate high-quality images effortlessly with easy-to-integrate Image Generation APIs. Perfect for creative applications, design automation, and AI-driven content creation.
                           </p>
                         </div>
                         <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button>
