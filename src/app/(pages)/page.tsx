@@ -1,4 +1,4 @@
-import HeaderComponent from "./components/Header";
+import HeaderComponent from "@/app/components/Header";
 import Image from 'next/image'
 import heroImage from '@/app/assets/img/hero-img.png'
 import mistralLogo from '@/app/assets/img/mistral-logo.png'
@@ -21,6 +21,7 @@ import adobeLogo from '@/app/assets/img/adobe-logo.png'
 import shopifyLogo from '@/app/assets/img/shopify-logo.png'
 import discordLogo from '@/app/assets/img/discord-logo.png'
 import githubLogo from '@/app/assets/img/github-logo.png'
+import FooterComponent from "@/app/components/Footer";
 
 
 
@@ -164,7 +165,7 @@ export default function Home() {
 
 
             {/* Why use wetrocloud */}
-            <section className="mt-24">
+            <section className="mt-24 mb-20">
             <h3 className="text-4xl font-medium text-center">Why use wetrocloud?</h3>
 
               <div className="container mx-auto mt-20 max-w-3xl">
@@ -208,10 +209,12 @@ export default function Home() {
               </div>
 
             </section>
-
-            
-
           </main>
+
+        {/* Footer component */}
+        <FooterComponent />
+
+
     </div>
   );
 }

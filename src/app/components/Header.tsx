@@ -2,16 +2,17 @@ import React from 'react'
 import Image from 'next/image'
 
 import headerLogo from '@/app/assets/img/header-logo.png'
+import Link from 'next/link'
 
 export default function HeaderComponent() {
   return (
     <nav className="w-full bg-white border-b border-gray-200 p-4 fixed top-0 z-10">
     <div className="mx-auto max-width-90 flex justify-between items-center">
-      <div className="">
+      <Link href={"/"} className="">
         <Image src={headerLogo} alt="Wetrocloud" className='header-logo'/>
-    </div>
+    </Link>
       <div className="flex space-x-10">
-        <a href="#" className="py-2 text-gray-800 hover:text-default">Pricing</a>
+        <Link href="/pricing" className="py-2 text-gray-800 hover:text-default">Pricing</Link>
         <a href="#" className="py-2 text-gray-800 hover:text-default">Developer</a>
         <a href="#" className="py-2 text-gray-800 hover:text-default">Blog</a>
         <a href="#" role='button' className="border-l border-gray-200 pl-6 py-2 text-gray-800 hover:text-default">Register</a>
