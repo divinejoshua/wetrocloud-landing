@@ -1,7 +1,7 @@
 import linkedInLogo from '@/app/assets/img/linkedin-social-icon.png'
 import emailLogo from '@/app/assets/img/email-social-icon.png'
 import Image from 'next/image'
-import { API_REFERENCES_URL, BOOK_CALL_URL, CONSOLE_URL, DOCS_RAG_API_URL, LINKEDIN_URL } from '../constants/constants'
+import { API_REFERENCES_URL, BLOG_URL, BOOK_CALL_URL, CONSOLE_URL, DOCS_RAG_API_URL, LINKEDIN_URL } from '../constants/constants'
 
 export default function FooterComponent() {
   return (
@@ -30,6 +30,7 @@ export default function FooterComponent() {
                 <ul className="mt-5 space-y-3">
                     <li><a href={BOOK_CALL_URL} target="_blank" className="hover:underline">Book a demo</a></li>
                     <li><a href="#" className="hover:underline">Playground</a></li>
+                    <li><a href={BLOG_URL} target='_blank' className="hover:underline">Blog</a></li>
                 </ul>
                 </div>
 
