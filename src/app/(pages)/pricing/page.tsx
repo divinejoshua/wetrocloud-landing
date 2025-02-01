@@ -6,6 +6,7 @@ import startupIcon from '@/app/assets/img/startup-pricing-icon.png'
 import enterpriseIcon from '@/app/assets/img/enterprise-pricing-icon.png'
 
 import FooterComponent from "@/app/components/Footer";
+import { REGISTER_DEVELOPER_URL, REGISTER_ENTERPRISE_URL, REGISTER_STARTUP_URL } from "@/app/constants/constants";
 
 
 
@@ -39,7 +40,7 @@ export default function Home() {
                             <span className="text-4xl">$0.9</span> <span className="text-gray-400">/ 200K tokens</span>
                           </div>
                         </div>
-                        <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Get started</button>
+                        <a href={REGISTER_DEVELOPER_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Get started</button></a>
                         </div>
 
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
@@ -52,7 +53,7 @@ export default function Home() {
                             <p className="mb-5 text-gray-400">Automatic monthly Token renewal</p>
                           </div>
                         </div>
-                        <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Get started</button>
+                        <a href={REGISTER_STARTUP_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Get started</button></a>
                         </div>
 
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
@@ -64,7 +65,7 @@ export default function Home() {
                             <p className="mt-5 text-gray-400">Maximise AI usage to the fullest with enterprise level AI infrastructure</p>
                           </div>
                         </div>
-                        <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Get started</button>
+                        <a href={REGISTER_ENTERPRISE_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Get started</button></a>
                         </div>
 
                     </div>
