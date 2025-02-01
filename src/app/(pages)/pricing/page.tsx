@@ -37,7 +37,7 @@ export default function Home() {
                           <Image src={developerIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
                           <h3 className="text-lg font-medium text-gray-800 mb-4">Developer</h3>
                           <div className="text-gray-600 mt-6">
-                            <span className="text-4xl">$0.9</span> <span className="text-gray-400">/ 200K tokens</span>
+                            <span className="text-4xl">$0.9</span> <span className="text-gray-400">/ 1M tokens</span>
                           </div>
                         </div>
                         <a href={REGISTER_DEVELOPER_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Get started</button></a>
@@ -49,7 +49,7 @@ export default function Home() {
                           <h3 className="text-lg font-medium text-gray-800 mb-4">Startup</h3>
                           <div className="text-gray-600 mt-6">
                             <span className="text-4xl">$99</span> <span className="text-gray-400">/ month</span>
-                            <p className="mt-5 text-gray-400">20M tokens</p>
+                            <p className="mt-5 text-gray-400">100M tokens</p>
                             <p className="mb-5 text-gray-400">Automatic monthly Token renewal</p>
                           </div>
                         </div>
