@@ -22,6 +22,7 @@ import shopifyLogo from '@/app/assets/img/shopify-logo.png'
 import discordLogo from '@/app/assets/img/discord-logo.png'
 import githubLogo from '@/app/assets/img/github-logo.png'
 import FooterComponent from "@/app/components/Footer";
+import { BOOK_CALL_URL, CONSOLE_URL } from "../constants/constants";
 
 
 
@@ -38,8 +39,8 @@ export default function Home() {
               Empower your business with tailored AI solutions. Increase work rate and efficiency by 600%.
             </p>
             <div className="block sm:flex space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 items-center justify-center max-width-90 mx-auto">
-              <button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950">Get started for free</button>
-              <button className="w-full sm:w-auto bg-white text-blue-950 px-6 py-3 rounded-sm border border-blue-950">Book a demo</button>
+              <a href={CONSOLE_URL} target="_blank"><button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950">Get started for free</button></a>
+              <a href={BOOK_CALL_URL} target="_blank"><button className="w-full sm:w-auto bg-white text-blue-950 px-6 py-3 rounded-sm border border-blue-950">Schedule a call </button></a>
             </div>
 
             {/* Hero image */}

@@ -7,6 +7,7 @@ import Link from 'next/link'
  
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import { CONSOLE_URL, DOCS_URL } from '../constants/constants'
 
 export default function HeaderComponent() {
   // Hooks
@@ -34,11 +35,10 @@ export default function HeaderComponent() {
       {/* Desktop and Mobile Menu */}
       <div className={`${isMenuOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 md:space-x-10 shadow-lg md:shadow-none`}>
         <Link href="/pricing" className={`py-2 hover:text-default ${pathname === '/pricing' ? 'text-blue-500' : 'text-gray-800'}`}>Pricing</Link>
-        <a href="#" className="py-2 text-gray-800 hover:text-default">Developer</a>
+        <a href={DOCS_URL} target='_blank' className="py-2 text-gray-800 hover:text-default">Developer</a>
         <a href="#" className="py-2 text-gray-800 hover:text-default">Playground</a>
         <a href="#" className="py-2 text-gray-800 hover:text-default">Blog</a>
-        <a href="#" role='button' className="py-2 md:border-l md:border-gray-200 md:pl-6 text-gray-800 hover:text-default">Register</a>
-        <button className="mt-4 md:mt-0 bg-black text-white px-6 py-2 rounded-sm hover:bg-blue-950">Login</button>
+        <a href={CONSOLE_URL} target='_blank'><button className="mt-4 md:mt-0 bg-black text-white px-6 py-2 rounded-sm hover:bg-blue-950">Go to console</button></a>
       </div>
       </div>
     </nav>
