@@ -35,22 +35,24 @@ export default function Home() {
             <h2 className="text-5xl font-medium text-black mb-4 max-w-5xl text-center">
               Scale your business with custom AI solutions
             </h2>
-            <p className="text-gray-500 text-lg mt-5 mb-8 max-w-xl text-center">
+            <p className="text-gray-500 text-lg mt-5 mb-5 max-w-xl text-center">
               Empower your business with tailored AI solutions. Increase work rate and efficiency by 600%.
             </p>
             <div className="block sm:flex space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 items-center justify-center max-width-90 mx-auto">
-              <a href={CONSOLE_URL} target="_blank"><button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950">Get started for free</button></a>
-              <a href={BOOK_CALL_URL} target="_blank"><button className="w-full sm:w-auto bg-white text-blue-950 px-6 py-3 rounded-sm border border-blue-950">Schedule a call </button></a>
+              <a href={CONSOLE_URL} target="_blank"><button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950 mt-3">Get started for free</button></a>
+              <a href={BOOK_CALL_URL} target="_blank"><button className="w-full sm:w-auto bg-white text-blue-950 px-6 py-3 rounded-sm border border-blue-950 mt-3">Schedule a call </button></a>
             </div>
 
             {/* Hero image */}
             {/* <Image src={heroImage} alt="Wetrocloud" className='hero-image mt-10 rounded-lg'/> */}
-            <iframe 
+            <div className="mt-10 w-full max-w-[800px] aspect-video">
+              <iframe 
               src="https://www.youtube.com/embed/cDFBfpaHg_4?si=eFle_WBHUFJfwhl0" 
-              className="mt-10 w-[800px] h-[450px]" 
+              className="w-full h-full"
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
+              ></iframe>
+            </div>
 
             <p className="text-3xl mt-16 font-medium"><span className="text-3xl font-medium text-default">20x</span> faster than traditional AI models with the use of inference</p>
 

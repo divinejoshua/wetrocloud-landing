@@ -8,8 +8,8 @@ export default function FooterComponent() {
     <div>
         <h3 className="text-4xl font-medium text-center">Get started with Wetrocloud</h3>
         <div className="block sm:flex space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 items-center justify-center mt-10 max-width-90 mx-auto">
-              <a href={CONSOLE_URL} target="_blank"><button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950">Get started for free</button></a>
-              <a href={BOOK_CALL_URL} target="_blank"><button className="w-full sm:w-auto bg-white text-blue-950 px-6 py-3 rounded-sm border border-blue-950">Schedule a call</button></a>
+              <a href={CONSOLE_URL} target="_blank"><button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950 mt-3">Get started for free</button></a>
+              <a href={BOOK_CALL_URL} target="_blank"><button className="w-full sm:w-auto bg-white text-blue-950 px-6 py-3 rounded-sm border border-blue-950 mt-3">Schedule a call</button></a>
         </div>
 
         <div className="mt-20 bg-gray-100 py-10">
