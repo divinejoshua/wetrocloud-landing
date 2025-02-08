@@ -29,7 +29,7 @@ export default function FooterComponent() {
                 <h3 className="font-bold">Product</h3>
                 <ul className="mt-5 space-y-3">
                     <li><a href={BOOK_CALL_URL} target="_blank" className="hover:underline">Book a demo</a></li>
-                    <li><a href="#" className="hover:underline">Playground</a></li>
+                    <li><span className="text-gray-400">Playground</span></li>
                     <li><a href={BLOG_URL} target='_blank' className="hover:underline">Blog</a></li>
                 </ul>
                 </div>

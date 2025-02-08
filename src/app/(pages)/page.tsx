@@ -44,7 +44,13 @@ export default function Home() {
             </div>
 
             {/* Hero image */}
-            <Image src={heroImage} alt="Wetrocloud" className='hero-image mt-10 rounded-lg'/>
+            {/* <Image src={heroImage} alt="Wetrocloud" className='hero-image mt-10 rounded-lg'/> */}
+            <iframe 
+              src="https://www.youtube.com/embed/cDFBfpaHg_4?si=eFle_WBHUFJfwhl0" 
+              className="mt-10 w-[800px] h-[450px]" 
+              title="YouTube video player" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
 
             <p className="text-3xl mt-16 font-medium"><span className="text-3xl font-medium text-default">20x</span> faster than traditional AI models with the use of inference</p>
 
@@ -87,7 +93,7 @@ export default function Home() {
                           Text generation allows AI systems to create human-like written content by predicting and generating sequences of words based on given prompts.
                           </p>
                         </div>
-                        <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button>
+                        {/* <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button> */}
                         </div>
 
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
@@ -98,7 +104,7 @@ export default function Home() {
                           Generate high-quality images effortlessly with easy-to-integrate Image Generation APIs. Perfect for creative applications, design automation, and AI-driven content creation.
                           </p>
                         </div>
-                        <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button>
+                        {/* <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button> */}
                         </div>
 
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-sm suite-card flex flex-col justify-between">
@@ -109,7 +115,7 @@ export default function Home() {
                           Convert text into natural, lifelike speech with Text-to-Audio APIs. Perfect for voice assistants, podcasts, and accessibility solutions.
                           </p>
                         </div>
-                        <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button>
+                        {/* <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button> */}
                         </div>
 
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-sm suite-card flex flex-col justify-between">
@@ -120,7 +126,7 @@ export default function Home() {
                           Effortlessly transcribe video audio into accurate text with Video Transcriber APIs. Ideal for captions, subtitles, and content analysis.
                           </p>
                         </div>
-                        <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button>
+                        {/* <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button> */}
                         </div>
 
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-sm suite-card flex flex-col justify-between">
@@ -131,7 +137,7 @@ export default function Home() {
                           Extract valuable insights from text and data with powerful extraction APIs. Ideal for document processing, automation, and analytics.
                           </p>
                         </div>
-                        <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button>
+                        {/* <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button> */}
                         </div>
 
                     </div>
