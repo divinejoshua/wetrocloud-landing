@@ -1,6 +1,5 @@
 import HeaderComponent from "@/app/components/Header";
 import Image from 'next/image'
-import heroImage from '@/app/assets/img/hero-img.png'
 import mistralLogo from '@/app/assets/img/mistral-logo.png'
 import openaiLogo from '@/app/assets/img/openai-logo.png'
 import metaLogo from '@/app/assets/img/meta-logo.png'
