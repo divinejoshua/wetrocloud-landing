@@ -9,12 +9,27 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Wetrocloud - Build AI solutions with our RAG as a Service platform",
+  title: "Wetrocloud - Build, Deploy, and Scale with Our RAG and Agents APIs",
   description: "Scale your business with our Retrieval-Augmented Generation (RAG) as a Service platform. Offering multilingual support, on-demand APIs, OCR integration, and customizable outputs, our solution enables enterprises to query their own resources and gain insights with real-time analytics. Fine-tuning and advanced AI features help you build tailored AI solutions that drive growth and efficiency.",
   keywords : "Wetrocloud, AI,  GPT, Artificial intelligence",
+  icons: [
+    { rel: 'icon', url: 'https://wetrocloud.com/favicon.ico' },
+    { rel: 'shortcut icon', url: 'https://wetrocloud.com/favicon.ico' },
+    { rel: 'apple-touch-icon', url: '/logo.png' },
+    { 
+      rel: 'icon',
+      type: 'image/x-icon',
+      url: 'https://wetrocloud.com/favicon.ico'
+    },
+    { 
+      rel: 'icon',
+      type: 'image/png',
+      url: 'https://wetrocloud.com/favicon.png'
+    }
+  ],
    // Open Graph (OG) metadata
    openGraph: {
-    title: 'Wetrocloud - Build AI solutions with our RAG as a Service platform',
+    title: 'Wetrocloud - Build, Deploy, and Scale with Our RAG and Agents APIs',
     description: 'Scale your business with our Retrieval-Augmented Generation (RAG) as a Service platform. Offering multilingual support, on-demand APIs, OCR integration, and customizable outputs, our solution enables enterprises to query their own resources and gain insights with real-time analytics. Fine-tuning and advanced AI features help you build tailored AI solutions that drive growth and efficiency.',
     type: 'website',
     url: 'https://wetrocloud.com',
@@ -48,6 +63,7 @@ export default function RootLayout({
       <Head>
           {/* Icons */}
           <link rel="icon" href ="https://wetrocloud.com/favicon.ico"/>
+          <link rel="icon" href="https://wetrocloud.com/favicon.ico" sizes="any" />
           <link rel="shortcut icon" href ="https://wetrocloud.com/favicon.ico"/>
           <link rel="icon" href="https://wetrocloud.com/favicon.ico" type="image/x-icon" />
           <link rel="shortcut icon" href="https://wetrocloud.com/favicon.ico" type="image/x-icon" />
@@ -55,7 +71,7 @@ export default function RootLayout({
           <link rel="canonical" href="https://wetrocloud.com/"/>
 
           {/* Twitter OG metadata */}
-          <meta property="twitter:title" content="Wetrocloud - Build AI solutions with our RAG as a Service platform" />
+          <meta property="twitter:title" content="Wetrocloud - Build, Deploy, and Scale with Our RAG and Agents APIs" />
           <meta property="twitter:description" content="Scale your business with our Retrieval-Augmented Generation (RAG) as a Service platform. Offering multilingual support, on-demand APIs, OCR integration, and customizable outputs, our solution enables enterprises to query their own resources and gain insights with real-time analytics. Fine-tuning and advanced AI features help you build tailored AI solutions that drive growth and efficiency." />
           <meta property="twitter:image" content="https://wetrocloud.com/meta-banner.jpg" />
           <meta name="twitter:image:summary_photo_image:src" content="https://wetrocloud.com/meta-banner.jpg"/>
