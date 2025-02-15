@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 
-const pageTitle : string = "Wetrocloud - Build, Deploy, and Scale with Our RAG and Agents APIs"
+const pageTitle : string = "Wetrocloud Pricing - Build, Deploy, and Scale with Our RAG and Agents APIs"
 const pageDescription : string = "Scale your business with our Retrieval-Augmented Generation (RAG) as a Service platform. Offering multilingual support, on-demand APIs, OCR integration, and customizable outputs, our solution enables enterprises to query their own resources and gain insights with real-time analytics. Fine-tuning and advanced AI features help you build tailored AI solutions that drive growth and efficiency."
 
 export const metadata: Metadata = {
