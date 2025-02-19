@@ -32,10 +32,13 @@ export default function Home() {
         <HeaderComponent />
           <main className="flex-grow flex flex-col items-center justify-center mt-32 mx-auto max-width-90 mb-20">
             <h2 className="text-5xl font-medium text-black mb-4 max-w-5xl text-center">
-              Scale your business with custom AI solutions
+                Powerful AI infrastructure designed to scale.
             </h2>
-            <p className="text-gray-500 text-lg mt-5 mb-5 max-w-xl text-center">
-              Empower your business with tailored AI solutions. Increase work rate and efficiency by 600%.
+            <p className="text-gray-500 text-lg mt-5 mb-1 max-w-xl">
+                Build, Deploy, and Scale with Our RAG and Agents APIs.
+            </p>
+            <p className="text-gray-500 text-lg mb-5 max-w-xlr">
+                AI inference with 10X speed.
             </p>
             <div className="block sm:flex space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 items-center justify-center max-width-90 mx-auto">
               <a href={CONSOLE_URL} target="_blank"><button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950 mt-3">Get started for free</button></a>
