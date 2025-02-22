@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
             <div className="mb-32 mt-16">
                 <div className="max-w-4xl mx-auto">
                 <h1 className="text-4xl font-bold mb-4">Wetrocloud Data Protection and Privacy Policy</h1>
-                <p className="italic text-gray-400 mb-6">Last Updated: 21st, February, 2024</p>
+                <p className="italic text-gray-400 mb-6">Last Updated: 21st, February, 2025</p>
                 <p className="mb-6">
                     This Data Protection and Privacy Policy ("Policy") outlines how Wetrocloud, Inc. ("we," "our," or "us") collects,
                     uses, stores, and protects your data when you use our API products and services.

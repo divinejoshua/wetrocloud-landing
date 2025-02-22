@@ -37,7 +37,7 @@ export default function HeaderComponent() {
       {/* Desktop and Mobile Menu */}
       <div className={`${isMenuOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 md:space-x-10 shadow-lg md:shadow-none`}>
         <Link href="/pricing" className={`py-2 hover:text-default ${pathname === '/pricing' ? 'text-blue-500' : 'text-gray-800'}`}>Pricing</Link>
-        <a href={DOCS_URL} target='_blank' className="py-2 text-gray-800 hover:text-default">Developer</a>
+        <a href={DOCS_URL} target='_blank' className="py-2 text-gray-800 hover:text-default">Docs</a>
         <span className="py-2 text-gray-400">Playground</span>
         <a href={BLOG_URL} target='_blank' className="py-2 text-gray-800 hover:text-default">Blog</a>
         <a href={CONSOLE_URL} target='_blank'><button className="mt-4 md:mt-0 bg-black text-white px-6 py-2 rounded-sm hover:bg-blue-950">Go to console</button></a>

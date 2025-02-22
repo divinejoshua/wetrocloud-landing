@@ -14,7 +14,7 @@ export default function TermsOfService() {
                     Wetrocloud Terms of Use and Service
                 </h1>
                 <p className="italic text-gray-400 mb-8">
-                    Last Updated: 21st, February, 2024
+                    Last Updated: 21st, February, 2025
                 </p>
 
                 <p className="mb-4">
