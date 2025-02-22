@@ -1,7 +1,8 @@
 import linkedInLogo from '@/app/assets/img/linkedin-social-icon.png'
 import emailLogo from '@/app/assets/img/email-social-icon.png'
 import Image from 'next/image'
-import { API_REFERENCES_URL, BLOG_URL, BOOK_CALL_URL, CONSOLE_URL, DOCS_RAG_API_URL, LINKEDIN_URL } from '../constants/constants'
+import { API_REFERENCES_URL, BLOG_URL, BOOK_CALL_URL, CONSOLE_URL, DOCS_RAG_API_URL, LINKEDIN_URL, PRIVACY_POLICY_URL, TERMS_OF_SERVICE_URL } from '../constants/constants'
+import Link from 'next/link'
 
 export default function FooterComponent() {
   return (
@@ -19,8 +20,8 @@ export default function FooterComponent() {
                 <div>
                 <h3 className="font-bold">Terms</h3>
                 <ul className="mt-5 space-y-3">
-                    <li><a href="#" className="hover:underline">Terms of service</a></li>
-                    <li><a href="#" className="hover:underline">Privacy policy</a></li>
+                    <li><Link href={TERMS_OF_SERVICE_URL} className="hover:underline">Terms of service</Link></li>
+                    <li><Link href={PRIVACY_POLICY_URL} className="hover:underline">Privacy policy</Link></li>
                 </ul>
                 </div>
 
@@ -53,7 +54,7 @@ export default function FooterComponent() {
                     </div>
 
                     <div className="text-sm text-gray-500 mt-6">
-                        &copy; Wetrocloud 2025
+                        &copy; Wetrocloud, Inc. 2025
                     </div>
 
 

@@ -4,6 +4,10 @@
   letter-spacing: 0.1px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header-logo {
   width: 150px;
 }
