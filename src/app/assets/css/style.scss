@@ -39,3 +39,27 @@ html {
 .menu-icon{
     width: 20px;
 }
+
+
+//Animations 
+@keyframes slideIn {
+    from {
+      transform: translateY(100%);
+      opacity: 0; /* Optional: Fade in as it slides */
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(100%);
+      opacity: 0; /* Optional: Fade out as it slides */
+    }
+  }

@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { BLOG_URL, CONSOLE_URL, DOCS_URL } from '../constants/constants'
+import CookieConsent from './CookieConcentModal'
 
 export default function HeaderComponent() {
   // Hooks
@@ -19,6 +20,7 @@ export default function HeaderComponent() {
 
   return (
     <nav className="w-full bg-white border-b border-gray-200 p-4 fixed top-0 z-10">
+       <CookieConsent />
       <div className="mx-auto max-width-90 flex justify-between items-center">
       <Link href={"/"} className="">
         <Image src={headerLogo} alt="Wetrocloud" className='header-logo'/>
