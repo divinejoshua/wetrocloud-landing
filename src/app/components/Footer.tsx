@@ -54,15 +54,14 @@ export default function FooterComponent() {
                     </div>
 
                     <div className="text-sm text-gray-500 mt-6">
-                        &copy; Wetrocloud, Inc. 2025
+                        &copy; Wetrocloud, Inc. {new Date().getFullYear()}
                     </div>
 
 
 
                 </div>
             </div>
-      
-           
+
         </div>
 
     </div>
