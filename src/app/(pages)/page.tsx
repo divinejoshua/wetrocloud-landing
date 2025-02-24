@@ -34,7 +34,7 @@ export default function Home() {
             <h2 className="text-5xl font-medium text-black mb-4 max-w-5xl text-center">
               AI <span className="text-5xl font-medium">+</span> <span className="text-5xl bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-transparent bg-clip-text">Your Resources</span>.
             </h2>
-            <p className="text-gray-500 text-lg mt-5 mb-1 max-w-xl">
+            <p className="text-gray-500 text-lg mt-5 mb-1 max-w-xl text-center">
                 Build, Deploy, and Scale with Our RAG and Agents APIs.
             </p>
             <p className="text-gray-500 text-lg mb-5 max-w-xlr">
