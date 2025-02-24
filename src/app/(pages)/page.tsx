@@ -21,7 +21,7 @@ import shopifyLogo from '@/app/assets/img/shopify-logo.png'
 import discordLogo from '@/app/assets/img/discord-logo.png'
 import githubLogo from '@/app/assets/img/github-logo.png'
 import FooterComponent from "@/app/components/Footer";
-import { BOOK_CALL_URL, CONSOLE_URL } from "../constants/constants";
+import { BOOK_CALL_URL, CONSOLE_URL, DOCS_DATA_EXTRACTION_URL, DOCS_IMAGE_TO_TEXT_URL, DOCS_QUICK_START_URL, DOCS_TEXT_GENERATION_API_URL } from "../constants/constants";
 
 
 
@@ -32,7 +32,7 @@ export default function Home() {
         <HeaderComponent />
           <main className="flex-grow flex flex-col items-center justify-center mt-32 mx-auto max-width-90 mb-20">
             <h2 className="text-5xl font-medium text-black mb-4 max-w-5xl text-center">
-                Powerful AI infrastructure designed to scale.
+              AI <span className="text-5xl font-medium">+</span> <span className="text-5xl bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-transparent bg-clip-text">Your Resources</span>.
             </h2>
             <p className="text-gray-500 text-lg mt-5 mb-1 max-w-xl">
                 Build, Deploy, and Scale with Our RAG and Agents APIs.
@@ -86,7 +86,7 @@ export default function Home() {
                           Powerful and easy-to-integrate RAG and AI Agent APIs to enhance your AI infrastructure. Seamlessly connect, retrieve, and generate intelligent responses for advanced applications.
                           </p>
                         </div>
-                        <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button>
+                        <a href={DOCS_QUICK_START_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button></a>
                         </div>
 
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
@@ -97,18 +97,18 @@ export default function Home() {
                           Text generation allows AI systems to create human-like written content by predicting and generating sequences of words based on given prompts.
                           </p>
                         </div>
-                        {/* <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button> */}
+                        <a href={DOCS_TEXT_GENERATION_API_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button></a>
                         </div>
 
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
                         <div>
                           <Image src={imageGenerationIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Image generation</h3>
+                          <h3 className="text-lg font-medium text-gray-800 mb-4">Image recognition (OCR)</h3>
                           <p className="text-gray-600">
-                          Generate high-quality images effortlessly with easy-to-integrate Image Generation APIs. Perfect for creative applications, design automation, and AI-driven content creation.
+                          Extract text from images and documents with high accuracy using our OCR APIs. Perfect for digitizing documents, automating data entry, and processing visual information.
                           </p>
                         </div>
-                        {/* <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button> */}
+                        <a href={DOCS_IMAGE_TO_TEXT_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button></a>
                         </div>
 
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-sm suite-card flex flex-col justify-between">
@@ -141,7 +141,7 @@ export default function Home() {
                           Extract valuable insights from text and data with powerful extraction APIs. Ideal for document processing, automation, and analytics.
                           </p>
                         </div>
-                        {/* <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button> */}
+                        <a href={DOCS_DATA_EXTRACTION_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button></a>
                         </div>
 
                     </div>

@@ -1,7 +1,7 @@
 import linkedInLogo from '@/app/assets/img/linkedin-social-icon.png'
 import emailLogo from '@/app/assets/img/email-social-icon.png'
 import Image from 'next/image'
-import { API_REFERENCES_URL, BLOG_URL, BOOK_CALL_URL, CONSOLE_URL, DOCS_RAG_API_URL, LINKEDIN_URL, PRIVACY_POLICY_URL, TERMS_OF_SERVICE_URL } from '../constants/constants'
+import { API_REFERENCES_URL, BLOG_URL, BOOK_CALL_URL, CONSOLE_URL, DOCS_RAG_API_URL, DOCS_TEXT_GENERATION_API_URL, LINKEDIN_URL, PRIVACY_POLICY_URL, TERMS_OF_SERVICE_URL } from '../constants/constants'
 import Link from 'next/link'
 
 export default function FooterComponent() {
@@ -39,7 +39,7 @@ export default function FooterComponent() {
                 <div>
                 <h3 className="font-bold">Developer</h3>
                 <ul className="mt-5 space-y-3">
-                    <li><a href="#" className="hover:underline">Chat APIs</a></li>
+                    <li><a href={DOCS_TEXT_GENERATION_API_URL} target='_blank' className="hover:underline">Chat APIs</a></li>
                     <li><a href={DOCS_RAG_API_URL} target='_blank' className="hover:underline">RAG APIs</a></li>
                     <li><a href={API_REFERENCES_URL} target='_blank' className="hover:underline">API references</a></li>
                 </ul>
