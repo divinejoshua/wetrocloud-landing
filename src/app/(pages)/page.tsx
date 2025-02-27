@@ -136,7 +136,7 @@ export default function Home() {
                         <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-sm suite-card flex flex-col justify-between">
                         <div>
                           <Image src={textExtractIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Text and Data extration</h3>
+                          <h3 className="text-lg font-medium text-gray-800 mb-4">Data extraction</h3>
                           <p className="text-gray-600">
                           Extract valuable insights from text and data with powerful extraction APIs. Ideal for document processing, automation, and analytics.
                           </p>
