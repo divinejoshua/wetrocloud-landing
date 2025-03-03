@@ -49,7 +49,7 @@ export default function Home() {
             {/* <Image src={heroImage} alt="Wetrocloud" className='hero-image mt-10 rounded-lg'/> */}
             <div className="mt-10 w-full max-w-[800px] aspect-video">
               <iframe 
-              src="https://www.youtube.com/embed/cDFBfpaHg_4?si=eFle_WBHUFJfwhl0" 
+              src="https://www.youtube.com/embed/QROswat4zGQ?si=cElFG9-Uis0G18Tz" 
               className="w-full h-full"
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -156,7 +156,7 @@ export default function Home() {
               <p className="mt-7 text-gray-500 text-center">Wetrocloud Apps can be integrated into more than 100 softwares and APIs</p>
             
               {/* Integrations logos */}
-              <div className="flex space-x-16 mt-16 mx-auto w-full justify-center">
+              <div className="flex space-x-12 mt-16 mx-auto w-full justify-center">
                 <div><Image src={slackLogo} alt="Wetrocloud" className="model-logo"/></div>
                 <div><Image src={notionLogo} alt="Wetrocloud" className="model-logo mt-1"/></div>
                 <div><Image src={gmailLogo} alt="Wetrocloud" className="model-logo mt-2"/></div>
@@ -164,7 +164,7 @@ export default function Home() {
                 <div><Image src={ms365Logo} alt="Wetrocloud" className="model-logo mt-2"/></div>
               </div>
 
-              <div className="flex space-x-16 mt-10 mx-auto w-full justify-center">
+              <div className="flex space-x-12 mt-10 mx-auto w-full justify-center">
                 <div><Image src={stripeLogo} alt="Wetrocloud" className="model-logo"/></div>
                 <div><Image src={adobeLogo} alt="Wetrocloud" className="model-logo mt-3"/></div>
                 <div><Image src={shopifyLogo} alt="Wetrocloud" className="model-logo mt-2"/></div>
