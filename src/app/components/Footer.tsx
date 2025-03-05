@@ -3,7 +3,7 @@ import emailLogo from '@/app/assets/img/email-social-icon.png'
 import youtubeLogo from '@/app/assets/img/youtube-logo.png'
 import discordLogo from '@/app/assets/img/discord-social-icon.png'
 import Image from 'next/image'
-import { API_REFERENCES_URL, BLOG_URL, BOOK_CALL_URL, CONSOLE_URL, DOCS_RAG_API_URL, DOCS_TEXT_GENERATION_API_URL, LINKEDIN_URL, PRIVACY_POLICY_URL, TERMS_OF_SERVICE_URL } from '../constants/constants'
+import { API_REFERENCES_URL, BLOG_URL, BOOK_CALL_URL, CONSOLE_URL, DISCORD_URL, DOCS_RAG_API_URL, DOCS_TEXT_GENERATION_API_URL, LINKEDIN_URL, PRIVACY_POLICY_URL, TERMS_OF_SERVICE_URL, YOUTUBE_URL } from '../constants/constants'
 import Link from 'next/link'
 
 export default function FooterComponent() {
@@ -53,8 +53,8 @@ export default function FooterComponent() {
                     <div className="flex space-x-4 mt-2">
                         <a href={LINKEDIN_URL} target='_blank' className="text-xl hover:text-gray-600"><Image src={linkedInLogo} alt="Wetrocloud" className="social-icon"/></a>
                         <a href="mailto:hello@wetrocloud.com" target='_blank' className="text-xl hover:text-gray-600"><Image src={emailLogo} alt="Wetrocloud" className="social-icon"/></a>
-                        <a href="https://www.youtube.com/@wetrocloud" target='_blank' className="text-xl hover:text-gray-600"><Image src={youtubeLogo} alt="Wetrocloud" className="social-icon"/></a>
-                        <a href="https://discord.gg/zC2Sfc3s" className="text-xl hover:text-gray-600" target='_blank'><Image src={discordLogo} alt="Wetrocloud" className="social-icon"/></a>
+                        <a href={YOUTUBE_URL} target='_blank' className="text-xl hover:text-gray-600"><Image src={youtubeLogo} alt="Wetrocloud" className="social-icon"/></a>
+                        <a href={DISCORD_URL} className="text-xl hover:text-gray-600" target='_blank'><Image src={discordLogo} alt="Wetrocloud" className="social-icon"/></a>
                     </div>
 
                     <div className="text-sm text-gray-500 mt-6">
