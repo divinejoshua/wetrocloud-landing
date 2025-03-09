@@ -3,7 +3,7 @@ import emailLogo from '@/app/assets/img/email-social-icon.png'
 import youtubeLogo from '@/app/assets/img/youtube-logo.png'
 import discordLogo from '@/app/assets/img/discord-social-icon.png'
 import Image from 'next/image'
-import { API_REFERENCES_URL, BLOG_URL, BOOK_CALL_URL, CONSOLE_URL, DISCORD_URL, DOCS_RAG_API_URL, DOCS_TEXT_GENERATION_API_URL, LINKEDIN_URL, PRIVACY_POLICY_URL, TERMS_OF_SERVICE_URL, YOUTUBE_URL } from '../constants/constants'
+import { API_REFERENCES_URL, BLOG_URL, BOOK_CALL_URL, CONSOLE_URL, DISCORD_URL, DOCS_RAG_API_URL, DOCS_TEXT_GENERATION_API_URL, LINKEDIN_URL, PLAYGROUND_URL, PRIVACY_POLICY_URL, TERMS_OF_SERVICE_URL, YOUTUBE_URL } from '../constants/constants'
 import Link from 'next/link'
 
 export default function FooterComponent() {
@@ -32,7 +32,7 @@ export default function FooterComponent() {
                 <h3 className="font-bold">Product</h3>
                 <ul className="mt-5 space-y-3">
                     <li><a href={BOOK_CALL_URL} target="_blank" className="hover:underline">Book a demo</a></li>
-                    <li><span className="text-gray-400">Playground</span></li>
+                    <li><a href={PLAYGROUND_URL} target='_blank' className="hover:underline">Playground</a></li>
                     <li><a href={BLOG_URL} target='_blank' className="hover:underline">Blog</a></li>
                 </ul>
                 </div>
