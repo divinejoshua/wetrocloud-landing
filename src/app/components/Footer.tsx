@@ -58,7 +58,7 @@ export default function FooterComponent() {
                     </div>
 
                     <div className="text-sm text-gray-500 mt-6">
-                        &copy; Wetrocloud, Inc. {new Date().getFullYear()}
+                        &copy; {new Date().getFullYear()}
                     </div>
 
 
