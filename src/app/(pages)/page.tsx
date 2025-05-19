@@ -8,7 +8,7 @@ import FooterComponent from "@/app/components/Footer";
 import heroImage from "@/app/assets/img/hero-image.png"
 import rightIcon from "@/app/assets/img/right-icon.png"
 import { BOOK_CALL_URL, CONSOLE_URL } from "../constants/constants";
-import FeaturesComponent from "../components/FeaturesComponent";
+import FeaturesCodeComponent from "../components/FeaturesCodeComponent";
 
 
 
@@ -54,7 +54,13 @@ export default function Home() {
 
             {/* Features suite */}
             <section className="mt-20 w-full max-w-7xl">
-              <FeaturesComponent/>
+              <div className="bg-blackconstant rounded-lg shadow-sm py-10 px-5">
+                <div className="container mx-auto text-center text-white">
+                  <h2 className="text-3xl text-white max-w-md mx-auto">Convert any data into LLM ready data</h2>
+                  <p className="mt-5 text-gray-400 max-w-lg mx-auto">Wetrocloud enables you to extract data from any source and create robust RAG applications.</p>
+                    <FeaturesCodeComponent/>
+                </div>
+              </div>
             </section>
 
 
