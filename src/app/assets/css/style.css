@@ -16,13 +16,8 @@ html {
   max-width: 90%;
 }
 
-.hero-image {
-  height: 400px;
-  width: 700px;
-}
-
 .model-logo {
-  width: 100px;
+  width: 70px;
 }
 
 .suite-icon {
@@ -42,6 +37,11 @@ html {
 }
 
 .ai-magic-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.button-icon {
   width: 20px;
   height: 20px;
 }
