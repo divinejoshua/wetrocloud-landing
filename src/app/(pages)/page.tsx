@@ -31,11 +31,11 @@ export default function Home() {
         {/* Header */}
         <HeaderComponent />
           <main className="flex-grow flex flex-col items-center justify-center mt-48 mx-auto max-width-90 mb-20">
-            <h2 className="text-5xl font-medium text-black mb-4 max-w-5xl text-center">
-              AI <span className="text-5xl font-medium">+</span> <span className="text-5xl bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-transparent bg-clip-text">Your Resources</span>.
+            <h2 className="text-6xl font-medium text-blackconstant mb-4 max-w-5xl text-center">
+            Query your data with <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-transparent bg-clip-text text-6xl"> LLMs </span>
             </h2>
-            <p className="text-gray-500 text-lg mt-5 mb-1 max-w-xl text-center">
-                Build, Deploy, and Scale with Our RAG and Agents APIs.
+            <p className="text-gray-500 text-lg mt-5 mb-1 max-w-4xl text-center">
+            Convert any unstructured data to structured LLM ready data. Power your ai applications with clean structured markdown from all types of resources. Web, File, Image, Audio, Video & Youtube
             </p>
             <p className="text-gray-500 text-lg mb-5 max-w-xlr">
                 AI inference with 10X speed.

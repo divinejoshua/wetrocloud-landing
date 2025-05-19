@@ -20,7 +20,7 @@ export default function HeaderComponent() {
     <header className="w-full fixed top-0 z-20">
       <CookieConsent />
       {/* Main Nav */}
-      <nav className="w-full bg-white border-b border-gray-200 p-4">
+      <nav className="w-full bg-white shadow-sm p-4">
         <div className="mx-auto max-w-7xl flex justify-between items-center">
           {/* Logo and Brand */}
           <Link href="/" className="flex items-center gap-2">
@@ -37,7 +37,7 @@ export default function HeaderComponent() {
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <Link href="/login" className="px-4 py-2 rounded-full text-gray-900 hover:bg-gray-100 transition">Login</Link>
-            <Link href="/register" className="px-6 py-2 rounded-full bg-blackconstant text-white font-semibold hover:bg-blue-900 transition">Register</Link>
+            <Link href="/register" className="px-6 py-2 rounded-full bg-blackconstant text-white hover:bg-default transition">Register</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -56,12 +56,12 @@ export default function HeaderComponent() {
           <a href={DOCS_URL} target="_blank" className="py-2 text-gray-900 hover:text-blue-600 transition">Docs</a>
           <a href={BLOG_URL} target="_blank" className="py-2 text-gray-900 hover:text-blue-600 transition">Blog</a>
           <Link href="/login" className="py-2 text-gray-900 hover:bg-gray-100 rounded-full transition">Login</Link>
-          <Link href="/register" className="py-2 bg-black text-white rounded-full font-semibold text-center hover:bg-blue-900 transition">Register</Link>
+          <Link href="/register" className="py-2 bg-black text-white rounded-full text-center hover:bg-default transition">Register</Link>
         </div>
       </nav>
 
       {/* Announcement Bar */}
-      <div className="w-full bg-blackconstant text-white text-sm flex items-center justify-center gap-4 px-4 py-2 border-b border-gray-900">
+      <div className="w-full bg-blackconstant text-white text-sm flex items-center justify-center gap-4 px-4 py-2 shadow-sm">
         <Image src={aiMagicIcon} alt="Wetrocloud" className="ai-magic-icon" />
         <span className="flex items-center gap-1 bg-white text-black rounded-full px-3 py-1 text-xs font-semibold">
           New
