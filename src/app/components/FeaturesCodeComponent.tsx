@@ -25,9 +25,68 @@ const DEMO_SNIPPETS = {
     curl: `curl --request POST \\\n  --url https://api.wetrocloud.com/scrape \\\n  --header 'x-api-key: wc-YOUR_API_KEY' \\\n  --data '{"url": "wetrocloud.dev"}'`,
   },
   rag: {
-    python: `from ragcloud import RagClient\nclient = RagClient(api_key="rc-KEY")\nanswer = client.query("What is vector search?")\nprint(answer)`,
-    node: `import { RagClient } from 'ragcloud'\nconst client = new RagClient('rc-KEY')\nconsole.log(await client.query('What is vector search?'))`,
-    curl: `curl -H "x-api-key: rc-KEY" \\\n  -d '{"query":"What is vector search?"}' \\\n  https://api.ragcloud.dev/query`,
+    python: `# pip install wetro\n\nfrom wetro import Wetrocloud
+
+# initialize client
+client = Wetrocloud(api_key="YOUR_API_KEY")
+
+# --- 1. create / ensure collection exists ---
+client.collection.create_collection(collection_id="quickstart")
+
+# --- 2. insert a web resource ---
+client.collection.insert_resource(
+    collection_id="quickstart",
+    resource="https://docs.wetrocloud.com/quickstart",
+    type="web",
+)
+
+# --- 3. query the collection ---
+response = client.collection.query_collection(
+    collection_id="quickstart",
+    request_query="What are the key points?",
+)
+print(response)`,
+    node: `//npm install wetro-sdk\n
+import Wetrocloud from 'wetro-sdk'
+
+const client = new Wetrocloud({ apiKey: 'YOUR_API_KEY' })
+
+// 1. create / ensure collection exists
+await client.createCollection({ collection_id: 'quickstart' })
+
+// 2. insert a resource
+await client.insertResource({
+  collection_id: 'quickstart',
+  resource: 'https://docs.wetrocloud.com/quickstart',
+  type: 'web'
+})
+
+// 3. query the collection
+const response = await client.queryCollection({
+  collection_id: 'quickstart',
+  request_query: 'What are the key points?'
+})
+console.log(response)`,
+    curl: `# 1. create / ensure collection exists
+curl --request POST \
+  --url https://api.wetrocloud.com/v1/collection/create/ \
+  --header 'Authorization: Token YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{"collection_id":"quickstart"}'
+
+# 2. insert a resource
+curl --request POST \
+  --url https://api.wetrocloud.com/v1/resource/insert/ \
+  --header 'Authorization: Token YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{"collection_id":"quickstart","resource":"https://docs.wetrocloud.com/quickstart","type":"web"}'
+
+# 3. query the collection
+curl --request POST \
+  --url https://api.wetrocloud.com/v1/collection/query/ \
+  --header 'Authorization: Token YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{"collection_id":"quickstart","request_query":"What are the key points?"}'`,
   },
 };
 
@@ -94,7 +153,7 @@ function Category({ id, heading, features } : any) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.4 }}
-        className="text-xl text-center text-white"
+        className="text-2xl text-center text-white"
       >
         {heading}
       </motion.h2>
