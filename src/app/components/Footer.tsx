@@ -9,6 +9,52 @@ import Link from 'next/link'
 export default function FooterComponent() {
   return (
     <div>
+
+        {/* Customer testimonials */}
+        <section className="w-full py-12 bg-white max-w-7xl px-3">
+          <h2 className="text-3xl md:text-4xl font-medium text-center mb-10">What Our Customers Are Saying</h2>
+          <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch max-w-6xl mx-auto px-4">
+              <div className="flex-1 bg-white rounded-lg shadow-none border border-gray-100 p-6 flex flex-col justify-between text-left">
+                <p className="text-gray-700 text-base mb-6">
+                  &quot;Integrating the Fully Managed RAG API was a game-changer for our team. It streamlined our data retrieval and boosted our AI capabilities without any extra maintenance on our end. Highly recommend!&quot;
+                </p>
+                <div className="flex items-center mt-auto">
+                  <span className="inline-block w-10 h-10 rounded-full bg-gray-200 mr-4"></span>
+                  <div>
+                    <div className="font-bold text-black text-sm">John Doe</div>
+                    <div className="text-xs text-gray-500">CEO Extreme Labs</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex-1 bg-white rounded-lg shadow-none border border-gray-100 p-6 flex flex-col justify-between text-left">
+                <p className="text-gray-700 text-base mb-6">
+                  &quot;Integrating the Fully Managed RAG API was a game-changer for our team. It streamlined our data retrieval and boosted our AI capabilities without any extra maintenance on our end. Highly recommend!&quot;
+                </p>
+                <div className="flex items-center mt-auto">
+                  <span className="inline-block w-10 h-10 rounded-full bg-gray-200 mr-4"></span>
+                  <div>
+                    <div className="font-bold text-black text-sm">John Doe</div>
+                    <div className="text-xs text-gray-500">CEO Extreme Labs</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex-1 bg-white rounded-lg shadow-none border border-gray-100 p-6 flex flex-col justify-between text-left">
+                <p className="text-gray-700 text-base mb-6">
+                  &quot;Integrating the Fully Managed RAG API was a game-changer for our team. It streamlined our data retrieval and boosted our AI capabilities without any extra maintenance on our end. Highly recommend!&quot;
+                </p>
+                <div className="flex items-center mt-auto">
+                  <span className="inline-block w-10 h-10 rounded-full bg-gray-200 mr-4"></span>
+                  <div>
+                    <div className="font-bold text-black text-sm">John Doe</div>
+                    <div className="text-xs text-gray-500">CEO Extreme Labs</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+
         <h3 className="text-4xl font-medium text-center">Get started with Wetrocloud</h3>
         <div className="block sm:flex space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 items-center justify-center mt-10 max-width-90 mx-auto">
               <a href={CONSOLE_URL} target="_blank"><button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950 mt-3">Get started for free</button></a>
