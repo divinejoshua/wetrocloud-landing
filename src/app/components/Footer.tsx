@@ -11,7 +11,7 @@ export default function FooterComponent() {
     <div>
 
         {/* Customer testimonials */}
-        <section className="w-full py-12 bg-white max-w-7xl px-3">
+        <section className="w-full py-12 bg-white max-w-7xl px-3 mx-auto">
           <h2 className="text-3xl md:text-4xl font-medium text-center mb-10">What Our Customers Are Saying</h2>
           <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch max-w-6xl mx-auto px-4">
               <div className="flex-1 bg-white rounded-lg shadow-none border border-gray-100 p-6 flex flex-col justify-between text-left">
@@ -55,12 +55,16 @@ export default function FooterComponent() {
           </div>
         </section>
 
-        <h3 className="text-4xl font-medium text-center">Get started with Wetrocloud</h3>
-        <div className="block sm:flex space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 items-center justify-center mt-10 max-width-90 mx-auto">
-              <a href={CONSOLE_URL} target="_blank"><button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950 mt-3">Get started for free</button></a>
-              <a href={BOOK_CALL_URL} target="_blank"><button className="w-full sm:w-auto bg-white text-blue-950 px-6 py-3 rounded-sm border border-blue-950 mt-3">Schedule a call</button></a>
+        {/* CTA */}
+        <div className="block bg-gray-100 mt-10 max-w-7xl py-20 px-3 mx-auto">
+            <h3 className="text-4xl font-medium text-center">Get started with Wetrocloud</h3>
+            <p className="mt-7 text-gray-500 text-center max-w-xl mx-auto">Get started with Wetrocloud today and unleash the full potential of your data extraction and data‑driven RAG applications.</p>
+            <div className="flex items-center justify-center space-x-4 mt-5">
+              <a href={CONSOLE_URL} target="_blank"><button className="w-full sm:w-auto bg-default text-white px-6 py-3 rounded-full hover:bg-gray-800 transition mt-3">Get started for free</button></a>
+            </div>
         </div>
 
+        {/* Footer */}
         <div className="mt-20 bg-gray-100 py-10">
 
                 <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">

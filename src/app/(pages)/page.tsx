@@ -4,26 +4,10 @@ import claudeLogo from '@/app/assets/img/claude-logo.png'
 import openaiLogo from '@/app/assets/img/openai-logo.png'
 import metaLogo from '@/app/assets/img/meta-logo.png'
 import geminiLogo from '@/app/assets/img/gemini-logo.png'
-import ragIcon from '@/app/assets/img/rag-icon.png'
-import textGenerationIcon from '@/app/assets/img/text-generation-icon.png'
-import imageGenerationIcon from '@/app/assets/img/image-generation-icon.png'
-import audioIcon from '@/app/assets/img/audio-icon.png'
-import videoTranscribeIcon from '@/app/assets/img/video-transcriber.png'
-import textExtractIcon from '@/app/assets/img/text-extract-icon.png'
-import slackLogo from '@/app/assets/img/slack-logo.png'
-import notionLogo from '@/app/assets/img/notion-logo.png'
-import gmailLogo from '@/app/assets/img/gmail-logo.png'
-import whatsappLogo from '@/app/assets/img/whatsapp-logo.png'
-import ms365Logo from '@/app/assets/img/microsoft-logo.png'
-import stripeLogo from '@/app/assets/img/stripe-logo.png'
-import adobeLogo from '@/app/assets/img/adobe-logo.png'
-import shopifyLogo from '@/app/assets/img/shopify-logo.png'
-import discordLogo from '@/app/assets/img/discord-logo.png'
-import githubLogo from '@/app/assets/img/github-logo.png'
 import FooterComponent from "@/app/components/Footer";
 import heroImage from "@/app/assets/img/hero-image.png"
 import rightIcon from "@/app/assets/img/right-icon.png"
-import { BOOK_CALL_URL, CONSOLE_URL, DOCS_DATA_EXTRACTION_URL, DOCS_IMAGE_TO_TEXT_URL, DOCS_QUICK_START_URL, DOCS_TEXT_GENERATION_API_URL } from "../constants/constants";
+import { BOOK_CALL_URL, CONSOLE_URL } from "../constants/constants";
 import FeaturesComponent from "../components/FeaturesComponent";
 
 
@@ -44,7 +28,7 @@ export default function Home() {
             {/* CTA buttons */}
             <div className="block items-center justify-center mx-auto mt-6">
               <a href={CONSOLE_URL} target="_blank">
-                <button className="w-full bg-black text-white shadow-sm px-8 py-4 rounded-full hover:bg-default transition mt-3 flex">
+                <button className="w-full bg-black text-white shadow-sm px-8 py-4 rounded-full hover:bg-gray-800 transition mt-3 flex">
                   Get started for free
                   <Image src={rightIcon} alt="Wetrocloud" className='ml-3 button-icon'/>
               </button></a>
