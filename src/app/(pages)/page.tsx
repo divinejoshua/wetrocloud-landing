@@ -30,7 +30,7 @@ export default function Home() {
     <div>
         {/* Header */}
         <HeaderComponent />
-          <main className="flex-grow flex flex-col items-center justify-center mt-32 mx-auto max-width-90 mb-20">
+          <main className="flex-grow flex flex-col items-center justify-center mt-48 mx-auto max-width-90 mb-20">
             <h2 className="text-5xl font-medium text-black mb-4 max-w-5xl text-center">
               AI <span className="text-5xl font-medium">+</span> <span className="text-5xl bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-transparent bg-clip-text">Your Resources</span>.
             </h2>
