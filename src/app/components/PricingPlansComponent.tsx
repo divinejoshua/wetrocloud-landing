@@ -129,7 +129,7 @@ export default function PricingPlansComponent() {
       </div>
 
       {/* Enterprise plan */}
-      <div className="mt-10 rounded-xl bg-blackconstant text-white py-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+      <div className="mt-10 rounded-xl bg-blackconstant text-white py-10 px-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
         <div className="flex-1 mb-8 md:mb-0">
           <h2 className="text-2xl font-bold mb-2 text-white">Enterprise Plan</h2>
           <p className="mb-6 text-lg text-white">Want a custom solution?</p>
