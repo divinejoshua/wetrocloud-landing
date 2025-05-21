@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
 },
   /* config options here */
+  images: {
+    domains: ['cdn.sanity.io', 'images.unsplash.com'],
+  },
 };
 
 export default nextConfig;

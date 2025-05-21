@@ -23,7 +23,7 @@ const plans = [
   },
   {
     title: 'Developer',
-    price: '$14',
+    price: '$9',
     frequency: 'monthly',
     tokens: '10M tokens',
     features: [
