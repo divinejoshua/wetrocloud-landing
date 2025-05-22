@@ -8,7 +8,7 @@ import Link from 'next/link'
  
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { BLOG_URL, DOCS_URL } from '../constants/constants'
+import { BLOG_URL, CONSOLE_URL, DOCS_URL } from '../constants/constants'
 import CookieConsent from './CookieConcentModal'
 
 export default function HeaderComponent() {
@@ -36,8 +36,8 @@ export default function HeaderComponent() {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <Link href="/login" className="px-4 py-2 rounded-full text-gray-900 hover:bg-gray-100 transition">Login</Link>
-            <Link href="/register" className="px-6 py-2 rounded-full bg-blackconstant text-white hover:bg-gray-800 transition shadow-sm">Register</Link>
+            <a href={CONSOLE_URL} target="_blank" className="px-4 py-2 rounded-full text-gray-900 hover:bg-gray-100 transition">Login</a>
+            <a href={CONSOLE_URL} target="_blank" className="px-6 py-2 rounded-full bg-blackconstant text-white hover:bg-gray-800 transition shadow-sm">Register</a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -55,8 +55,8 @@ export default function HeaderComponent() {
           <Link href="/pricing" className="py-2 text-gray-900 hover:text-blue-600 transition">Pricing</Link>
           <a href={DOCS_URL} target="_blank" className="py-2 text-gray-900 hover:text-blue-600 transition">Docs</a>
           <a href={BLOG_URL} target="_blank" className="py-2 text-gray-900 hover:text-blue-600 transition">Blog</a>
-          <Link href="/login" className="py-2 text-gray-900 hover:bg-gray-100 rounded-full transition">Login</Link>
-          <Link href="/register" className="py-2 bg-black text-white rounded-full text-center hover:bg-gray-800 transition shadow-sm">Register</Link>
+          <a href={CONSOLE_URL} target="_blank" className="py-2 text-gray-900 hover:bg-gray-100 rounded-full transition">Login</a>
+          <a href={CONSOLE_URL} target="_blank" className="py-2 bg-black text-white rounded-full text-center hover:bg-gray-800 transition shadow-sm">Register</a>
         </div>
       </nav>
 
