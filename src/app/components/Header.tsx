@@ -31,7 +31,7 @@ export default function HeaderComponent() {
           <div className="hidden md:flex items-center gap-8">
             <Link href="/pricing" className={`hover:text-blue-600 transition ${pathname === '/pricing' ? 'text-blue-600 font-semibold' : 'text-gray-900'}`}>Pricing</Link>
             <a href={DOCS_URL} target="_blank" className="hover:text-blue-600 transition text-gray-900">Docs</a>
-            <Link href={BLOG_URL} className="hover:text-blue-600 transition text-gray-900">Blog</Link>
+            <a href={BLOG_URL} target="_blank" className="hover:text-blue-600 transition text-gray-900">Blog</a>
           </div>
 
           {/* Desktop Auth Buttons */}
@@ -54,7 +54,7 @@ export default function HeaderComponent() {
         <div className={`${isMenuOpen ? 'flex' : 'hidden'} md:hidden flex-col bg-white border-t border-gray-200 px-4 pt-2 pb-4 gap-2`}> 
           <Link href="/pricing" className="py-2 text-gray-900 hover:text-blue-600 transition">Pricing</Link>
           <a href={DOCS_URL} target="_blank" className="py-2 text-gray-900 hover:text-blue-600 transition">Docs</a>
-          <Link href={BLOG_URL} className="py-2 text-gray-900 hover:text-blue-600 transition">Blog</Link>
+          <a href={BLOG_URL} target="_blank" className="py-2 text-gray-900 hover:text-blue-600 transition">Blog</a>
           <Link href="/login" className="py-2 text-gray-900 hover:bg-gray-100 rounded-full transition">Login</Link>
           <Link href="/register" className="py-2 bg-black text-white rounded-full text-center hover:bg-gray-800 transition shadow-sm">Register</Link>
         </div>

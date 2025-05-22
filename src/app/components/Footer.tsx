@@ -87,7 +87,7 @@ export default function FooterComponent() {
                 <div>
                 <h3 className="font-bold">Company</h3>
                 <ul className="mt-5 space-y-3">
-                    <li><Link href={BLOG_URL} className="hover:underline transition">Blog</Link></li>
+                    <li><a href={BLOG_URL} target="_blank" className="hover:underline transition">Blog</a></li>
                     <li><Link href={PRICING_URL}  className="hover:underline transition">Pricing</Link></li>
                     <li><a href={BOOK_CALL_URL} target="_blank" className="hover:underline transition">Book a demo</a></li>
                 </ul>
