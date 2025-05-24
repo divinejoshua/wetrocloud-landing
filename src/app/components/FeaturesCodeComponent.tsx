@@ -116,7 +116,7 @@ curl --request POST \
 // ---------------------------------------------------------------------
 // Shared helper components
 // ---------------------------------------------------------------------
-const TabButton = ({ id, label, active, onClick } : any) => (
+const TabButton = ({ id, label, active, onClick } : { id: string; label: string; active: boolean; onClick: (id: string) => void }) => (
   <button
     onClick={() => onClick(id)}
     className={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${
@@ -127,7 +127,7 @@ const TabButton = ({ id, label, active, onClick } : any) => (
   </button>
 );
 
-const CodeBlock = ({ language, code } : any) => (
+const CodeBlock = ({ language, code } : { language: string; code: string }) => (
   <div className="relative">
     <SyntaxHighlighter
       language={language}
@@ -140,7 +140,7 @@ const CodeBlock = ({ language, code } : any) => (
 
     {/* Copy button */}
     <button
-      onClick={(event: any) => {
+      onClick={(event: React.MouseEvent<HTMLButtonElement>) => {
         navigator.clipboard.writeText(code);
         const button = event.currentTarget;
         button.textContent = "Copied!";
@@ -155,7 +155,7 @@ const CodeBlock = ({ language, code } : any) => (
   </div>
 );
 
-const FeatureCard = ({ title, children } : any) => (
+const FeatureCard = ({ title, children } : { title: string; children: React.ReactNode }) => (
   <div className="flex flex-col gap-2 bg-muted/50 rounded-2xl p-6 backdrop-blur-lg shadow-inner max-w-xs w-full">
     <h3 className="font-medium text-md text-white">{title}</h3>
     <p className="text-sm leading-relaxed text-gray-300">{children}</p>
@@ -165,9 +165,9 @@ const FeatureCard = ({ title, children } : any) => (
 // ---------------------------------------------------------------------
 // Category block (cards + snippet)
 // ---------------------------------------  ------------------------------
-function Category({ id, heading, features } : any) {
+function Category({ id, heading, features } : { id: string; heading: string; features: { title: string; children: React.ReactNode }[] }) {
   const [lang, setLang] = useState("python");
-  const snippets = DEMO_SNIPPETS[id];
+  const snippets = DEMO_SNIPPETS[id as keyof typeof DEMO_SNIPPETS];
 
   return (
     <section className="w-full flex flex-col items-center py-16">
