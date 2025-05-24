@@ -19,3 +19,4 @@ export const REGISTER_ENTERPRISE_URL = 'https://console.wetrocloud.com/auth?type
 export const BLOG_URL = 'https://medium.com/@wetrocloud'
 export const PRIVACY_POLICY_URL = '/legal/privacy-policy'
 export const TERMS_OF_SERVICE_URL = '/legal/terms-of-service'
+export const PRICING_URL = '/pricing'

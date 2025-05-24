@@ -1,27 +1,14 @@
 import HeaderComponent from "@/app/components/Header";
 import Image from 'next/image'
-import mistralLogo from '@/app/assets/img/mistral-logo.png'
+import claudeLogo from '@/app/assets/img/claude-logo.png'
 import openaiLogo from '@/app/assets/img/openai-logo.png'
 import metaLogo from '@/app/assets/img/meta-logo.png'
 import geminiLogo from '@/app/assets/img/gemini-logo.png'
-import ragIcon from '@/app/assets/img/rag-icon.png'
-import textGenerationIcon from '@/app/assets/img/text-generation-icon.png'
-import imageGenerationIcon from '@/app/assets/img/image-generation-icon.png'
-import audioIcon from '@/app/assets/img/audio-icon.png'
-import videoTranscribeIcon from '@/app/assets/img/video-transcriber.png'
-import textExtractIcon from '@/app/assets/img/text-extract-icon.png'
-import slackLogo from '@/app/assets/img/slack-logo.png'
-import notionLogo from '@/app/assets/img/notion-logo.png'
-import gmailLogo from '@/app/assets/img/gmail-logo.png'
-import whatsappLogo from '@/app/assets/img/whatsapp-logo.png'
-import ms365Logo from '@/app/assets/img/microsoft-logo.png'
-import stripeLogo from '@/app/assets/img/stripe-logo.png'
-import adobeLogo from '@/app/assets/img/adobe-logo.png'
-import shopifyLogo from '@/app/assets/img/shopify-logo.png'
-import discordLogo from '@/app/assets/img/discord-logo.png'
-import githubLogo from '@/app/assets/img/github-logo.png'
 import FooterComponent from "@/app/components/Footer";
-import { BOOK_CALL_URL, CONSOLE_URL, DOCS_DATA_EXTRACTION_URL, DOCS_IMAGE_TO_TEXT_URL, DOCS_QUICK_START_URL, DOCS_TEXT_GENERATION_API_URL } from "../constants/constants";
+import heroImage from "@/app/assets/img/hero-image.png"
+import rightIcon from "@/app/assets/img/right-icon.png"
+import { BOOK_CALL_URL, CONSOLE_URL } from "../constants/constants";
+import FeaturesCodeComponent from "../components/FeaturesCodeComponent";
 
 
 
@@ -30,192 +17,80 @@ export default function Home() {
     <div>
         {/* Header */}
         <HeaderComponent />
-          <main className="flex-grow flex flex-col items-center justify-center mt-32 mx-auto max-width-90 mb-20">
-            <h2 className="text-5xl font-medium text-black mb-4 max-w-5xl text-center">
-              AI <span className="text-5xl font-medium">+</span> <span className="text-5xl bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-transparent bg-clip-text">Your Resources</span>.
+          <main className="flex-grow flex flex-col items-center justify-center mt-48 mx-auto max-width-90 mb-20">
+            <h2 className="text-6xl font-medium text-blackconstant mb-4 max-w-5xl text-center">
+            Extract LLM Ready Data from <br/> any <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-transparent bg-clip-text text-6xl"> source </span>
             </h2>
-            <p className="text-gray-500 text-lg mt-5 mb-1 max-w-xl text-center">
-                Build, Deploy, and Scale with Our RAG and Agents APIs.
+            <p className="text-gray-500 text-lg mt-5 mb-1 max-w-4xl text-center">
+            Convert any unstructured data to structured LLM ready data. Power your AI applications with clean structured markdown from all types of resources. Web, File, Image, Audio, Video & Youtube.
             </p>
-            <p className="text-gray-500 text-lg mb-5 max-w-xlr">
-                AI inference with 10X speed.
-            </p>
-            <div className="block sm:flex space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 items-center justify-center max-width-90 mx-auto">
-              <a href={CONSOLE_URL} target="_blank"><button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-sm hover:bg-blue-950 mt-3">Get started for free</button></a>
-              <a href={BOOK_CALL_URL} target="_blank"><button className="w-full sm:w-auto bg-white text-blue-950 px-6 py-3 rounded-sm border border-blue-950 mt-3">Schedule a call </button></a>
+
+            {/* CTA buttons */}
+            <div className="block items-center justify-center mx-auto mt-6">
+              <a href={CONSOLE_URL} target="_blank">
+                <button className="w-full bg-black text-white shadow-sm px-8 py-4 rounded-full hover:bg-gray-800 transition mt-3 flex">
+                  Get started for free
+                  <Image src={rightIcon} alt="Wetrocloud" className='ml-3 button-icon'/>
+              </button></a>
+              <a href={BOOK_CALL_URL} target="_blank"><button className="w-full font-medium bg-white transition text-blackconstant px-8 py-4 rounded-full hover:bg-gray-100 mt-3">Book a demo </button></a>
             </div>
 
             {/* Hero image */}
-            {/* <Image src={heroImage} alt="Wetrocloud" className='hero-image mt-10 rounded-lg'/> */}
-            <div className="mt-10 w-full max-w-[800px] aspect-video">
-              <iframe 
-              src="https://www.youtube.com/embed/QROswat4zGQ?si=cElFG9-Uis0G18Tz" 
-              className="w-full h-full"
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              ></iframe>
+            <div className="mt-10 w-full max-w-7xl bg-gray-100 py-20 px-10 rounded-lg shadow-sm">
+              <Image src={heroImage} alt="Wetrocloud" className='w-full max-w-4xl mx-auto mt-10 rounded-lg'/> 
             </div>
 
-            <p className="text-3xl mt-16 font-medium"><span className="text-3xl font-medium text-default">20x</span> faster than traditional AI models with the use of inference</p>
+            <p className="text-3xl mt-16 font-medium">Supported by leading models</p>
 
             {/* Model logos */}
-            <div className="flex space-x-12 mt-16 mx-auto w-full justify-center">
-              <div><Image src={mistralLogo} alt="Wetrocloud" className="model-logo mt-3"/></div>
+            <div className="flex space-x-12 mt-10 mx-auto w-full justify-center">
+              <div><Image src={claudeLogo} alt="Wetrocloud" className="model-logo mt-3"/></div>
               <div><Image src={openaiLogo} alt="Wetrocloud" className="model-logo mt-3"/></div>
               <div><Image src={metaLogo} alt="Wetrocloud" className="model-logo mt-4"/></div>
               <div><Image src={geminiLogo} alt="Wetrocloud" className="model-logo"/></div>
             </div>
+            <p className="mt-10 text-center text-gray-500">All our model providers - Generate & Retrieve structured data with the LLM of your choice </p>
 
 
-            {/* AI suite */}
-            <section className="mt-20">
-              <h3 className="text-4xl font-medium text-center">Custom AI Software suite</h3>
-
-              <p className="mt-7 text-gray-500 text-center">Wetrocloud provides various custom tools that you can use to automate your workflow</p>
-
-
-                <div className="bg-white py-16">
-                  <div className="container mx-auto">
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
-                        <div>
-                          <Image src={ragIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">RAG and AI Agent APIs</h3>
-                          <p className="text-gray-600 mt-6">
-                          Powerful and easy-to-integrate RAG and AI Agent APIs to enhance your AI infrastructure. Seamlessly connect, retrieve, and generate intelligent responses for advanced applications.
-                          </p>
-                        </div>
-                        <a href={DOCS_QUICK_START_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button></a>
-                        </div>
-
-                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
-                        <div>
-                          <Image src={textGenerationIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Text generation</h3>
-                          <p className="text-gray-600">
-                          Text generation allows AI systems to create human-like written content by predicting and generating sequences of words based on given prompts.
-                          </p>
-                        </div>
-                        <a href={DOCS_TEXT_GENERATION_API_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button></a>
-                        </div>
-
-                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg suite-card flex flex-col justify-between">
-                        <div>
-                          <Image src={imageGenerationIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Image recognition (OCR)</h3>
-                          <p className="text-gray-600">
-                          Extract text from images and documents with high accuracy using our OCR APIs. Perfect for digitizing documents, automating data entry, and processing visual information.
-                          </p>
-                        </div>
-                        <a href={DOCS_IMAGE_TO_TEXT_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button></a>
-                        </div>
-
-                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-sm suite-card flex flex-col justify-between">
-                        <div>
-                          <Image src={audioIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Text to Audio</h3>
-                          <p className="text-gray-600">
-                          Convert text into natural, lifelike speech with Text-to-Audio APIs. Perfect for voice assistants, podcasts, and accessibility solutions.
-                          </p>
-                        </div>
-                        {/* <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button> */}
-                        </div>
-
-                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-sm suite-card flex flex-col justify-between">
-                        <div>
-                          <Image src={videoTranscribeIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Video transcriber</h3>
-                          <p className="text-gray-600">
-                          Effortlessly transcribe video audio into accurate text with Video Transcriber APIs. Ideal for captions, subtitles, and content analysis.
-                          </p>
-                        </div>
-                        {/* <button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button> */}
-                        </div>
-
-                        <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-sm suite-card flex flex-col justify-between">
-                        <div>
-                          <Image src={textExtractIcon} alt="Wetrocloud" className="suite-icon mt-3 mb-7"/>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Data extraction</h3>
-                          <p className="text-gray-600">
-                          Extract valuable insights from text and data with powerful extraction APIs. Ideal for document processing, automation, and analytics.
-                          </p>
-                        </div>
-                        <a href={DOCS_DATA_EXTRACTION_URL} target="_blank"><button className="bg-black text-white py-2 px-6 rounded-sm hover:bg-blue-950 w-fit">Learn more</button></a>
-                        </div>
-
-                    </div>
-                  </div>
+            {/* Features suite */}
+            <section className="mt-20 w-full max-w-7xl">
+              <div className="bg-blackconstant rounded-lg shadow-sm py-10 px-5">
+                <div className="container mx-auto text-center text-white">
+                  <h2 className="text-3xl text-white max-w-md mx-auto">Convert any data into LLM ready data</h2>
+                  <p className="mt-5 text-gray-400 max-w-lg mx-auto">Wetrocloud enables you to extract data from any source and create robust RAG applications.</p>
+                    <FeaturesCodeComponent/>
                 </div>
+              </div>
             </section>
 
-
-            {/* Integrations */}
-            <section className="mt-20">
-              <h3 className="text-4xl font-medium text-center">With over 50+ integrations</h3>
-              <p className="mt-7 text-gray-500 text-center">Wetrocloud Apps can be integrated into more than 100 softwares and APIs</p>
-            
-              {/* Integrations logos */}
-              <div className="flex space-x-12 mt-16 mx-auto w-full justify-center">
-                <div><Image src={slackLogo} alt="Wetrocloud" className="model-logo"/></div>
-                <div><Image src={notionLogo} alt="Wetrocloud" className="model-logo mt-1"/></div>
-                <div><Image src={gmailLogo} alt="Wetrocloud" className="model-logo mt-2"/></div>
-                <div><Image src={whatsappLogo} alt="Wetrocloud" className="model-logo mt-2"/></div>
-                <div><Image src={ms365Logo} alt="Wetrocloud" className="model-logo mt-2"/></div>
-              </div>
-
-              <div className="flex space-x-12 mt-10 mx-auto w-full justify-center">
-                <div><Image src={stripeLogo} alt="Wetrocloud" className="model-logo"/></div>
-                <div><Image src={adobeLogo} alt="Wetrocloud" className="model-logo mt-3"/></div>
-                <div><Image src={shopifyLogo} alt="Wetrocloud" className="model-logo mt-2"/></div>
-                <div><Image src={discordLogo} alt="Wetrocloud" className="model-logo mt-2"/></div>
-                <div><Image src={githubLogo} alt="Wetrocloud" className="model-logo"/></div>
-              </div>
-
-            </section>
 
 
             {/* Why use wetrocloud */}
             <section className="mt-24 mb-20">
-            <h3 className="text-4xl font-medium text-center">Why use wetrocloud?</h3>
+            <h3 className="text-4xl font-medium text-center">The best developer experience</h3>
+
+            <p className="text-center mt-5 text-gray-500">Our platform is designed to provide the best developer experience, making coding faster, easier, and more enjoyable.</p>
 
               <div className="container mx-auto mt-20 max-w-3xl">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                       <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg h-80 flex flex-col justify-between">
                         <div>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Privacy and security</h3>
+                          <h3 className="text-lg font-medium text-gray-800 mb-4">End to end data extraction </h3>
                           <p className="text-gray-600 mt-6">
-                          WetroCloud ensures top-tier privacy and security, keeping your data protected with robust encryption and compliance standards. Your sensitive information remains confidential, giving you full control over access and usage.
+                          Our end-to-end data extraction API simplifies the entire process, delivering accurate and fast results from raw data to actionable insights.
                           </p>
                         </div>
                       </div>
 
                       <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg h-80 flex flex-col justify-between">
                         <div>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Personalized Customer Experience</h3>
+                          <h3 className="text-lg font-medium text-gray-800 mb-4">Fully Managed RAG</h3>
                           <p className="text-gray-600">
-                          AI-powered tools tailor recommendations, marketing messages, and support responses to individual customer needs, improving satisfaction and engagement.
+                          Our fully managed RAG API handles retrieval-augmented generation seamlessly, so you can integrate powerful AI-driven search without the hassle of maintenance.
                           </p>
                         </div>
                       </div>
 
-                      <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg h-80 flex flex-col justify-between">
-                        <div>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Cost Optimisation</h3>
-                          <p className="text-gray-600">
-                          Automating processes and optimizing resource allocation reduce operational expenses, increasing overall profitability.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="border border-gray-200 px-6 pt-6 pb-10 rounded-lg h-80 flex flex-col justify-between">
-                        <div>
-                          <h3 className="text-lg font-medium text-gray-800 mb-4">Scalability</h3>
-                          <p className="text-gray-600">
-                          WetroCloud offers seamless scalability to handle growing workloads efficiently. Easily expand resources as your needs evolve without compromising performance.
-                          </p>
-                        </div>
-                      </div>
                   </div>
               </div>
 

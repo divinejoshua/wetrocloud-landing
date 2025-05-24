@@ -19,6 +19,7 @@ const config: Config = {
         faded : '#999',
         danger : '#FF3737',
         warning : '#EED202',
+        blackconstant : "#121212"
       },
       screens: {
         sm: '480px',
