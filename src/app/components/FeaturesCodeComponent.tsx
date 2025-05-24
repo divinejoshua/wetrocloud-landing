@@ -20,9 +20,32 @@ import { motion } from "framer-motion";
 // ---------------------------------------------------------------------
 const DEMO_SNIPPETS = {
   "data-extraction": {
-    python: `# pip install wetrocloud\nfrom wetrocloud import WetrocloudApp\napp = WetrocloudApp(api_key="wc-YOUR_API_KEY")\napp.scrape_url('wetrocloud.dev')`,
-    node: `// npm i wetrocloud\nimport { WetrocloudApp } from 'wetrocloud'\nconst app = new WetrocloudApp({ apiKey: 'wc-YOUR_API_KEY' })\nawait app.scrapeUrl('wetrocloud.dev')`,
-    curl: `curl --request POST \\\n  --url https://api.wetrocloud.com/scrape \\\n  --header 'x-api-key: wc-YOUR_API_KEY' \\\n  --data '{"url": "wetrocloud.dev"}'`,
+    python: `#pip install wetro
+import requests
+
+url = "https://api.wetrocloud.com/v2/markdown-converter/"
+
+payload = {
+  'link': 'https://docs.wetrocloud.com/quickstart',
+  'resource_type': 'file'
+}
+files=[
+
+]
+headers = {
+  'Authorization': 'Token <YOUR_API_KEY>'
+}
+
+response = requests.request("POST", url, headers=headers, data=payload, files=files)
+
+print(response.text)
+`,
+    node: `//npm install wetro-sdk\nconst axios = require('axios');\nconst FormData = require('form-data');\nlet data = new FormData();\ndata.append('link', 'https://docs.wetrocloud.com/quickstart');\ndata.append('resource_type', 'file');\nlet config = {  method: 'post',  maxBodyLength: Infinity, url: 'https://api.wetrocloud.com/v2/markdown-converter/',headers: {'Authorization': 'Token YOUR_API_KEY',     ...data.getHeaders()  },  data : data};\naxios.request(config).then((response) => {  console.log(JSON.stringify(response.data));})
+      .catch((error) => {  console.log(error);});`,
+    curl: `curl --location 'https://api.wetrocloud.com/v2/markdown-converter/' \
+    \n--header 'Authorization: Token YOUR_API_KEY' \
+    \n--form 'link="https://docs.wetrocloud.com/quickstart"' \
+    \n--form 'resource_type="file"'`,
   },
   rag: {
     python: `# pip install wetro\n\nfrom wetro import Wetrocloud

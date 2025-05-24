@@ -13,7 +13,7 @@ export default function FooterComponent() {
     <div>
 
         {/* Customer testimonials */}
-        <section className="w-full py-12 bg-white max-w-7xl px-3 mx-auto">
+        {/* <section className="w-full py-12 bg-white max-w-7xl px-3 mx-auto">
           <h2 className="text-3xl md:text-4xl font-medium text-center mb-10">What Our Customers Are Saying</h2>
           <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch max-w-6xl mx-auto px-4">
               <div className="flex-1 bg-white rounded-lg shadow-none border border-gray-100 p-6 flex flex-col justify-between text-left">
@@ -55,7 +55,7 @@ export default function FooterComponent() {
                 </div>
               </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA */}
         <div className="block bg-gray-100 mt-10 max-w-7xl py-20 px-3 mx-auto">
@@ -97,7 +97,7 @@ export default function FooterComponent() {
                 <div>
                 <h3 className="font-bold">Documentation</h3>
                 <ul className="mt-5 space-y-3">
-                    <li><a href={DOCS_TEXT_GENERATION_API_URL} target='_blank' className="hover:underline transition">Data Extraction API</a></li>
+                    {/* <li><a href={DOCS_TEXT_GENERATION_API_URL} target='_blank' className="hover:underline transition">Data Extraction API</a></li> */}
                     <li><a href={DOCS_RAG_API_URL} target='_blank' className="hover:underline transition">RAG API</a></li>
                     <li><a href={API_REFERENCES_URL} target='_blank' className="hover:underline transition">API references</a></li>
                 </ul>
