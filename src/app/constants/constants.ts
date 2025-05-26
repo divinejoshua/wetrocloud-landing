@@ -20,3 +20,6 @@ export const BLOG_URL = 'https://medium.com/@wetrocloud'
 export const PRIVACY_POLICY_URL = '/legal/privacy-policy'
 export const TERMS_OF_SERVICE_URL = '/legal/terms-of-service'
 export const PRICING_URL = '/pricing'
+export const STRIPE_DEV_PLAN = "https://buy.stripe.com/8x2eVd7a29ft7Ggb9M7Zu01"
+export const STRIPE_STARTUP_PLAN = "https://buy.stripe.com/eVqdR91PI77l3q0b9M7Zu02"
+export const STRIPE_PRO_PLAN = "https://buy.stripe.com/bJe5kDbqiajx8Kkgu67Zu03"

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import checkIcon from '@/app/assets/img/check-icon.png'
 import checkIconWhite from '@/app/assets/img/check-icon-white.png'
+import { BOOK_CALL_URL, CONSOLE_URL, STRIPE_DEV_PLAN, STRIPE_PRO_PLAN, STRIPE_STARTUP_PLAN } from '../constants/constants';
 
 const plans = [
   {
@@ -19,7 +20,8 @@ const plans = [
     border: 'border-gray-200',
     priceTag: 'text-black',
     buttonColor: 'bg-blue-500',
-    textColor: 'text-black'
+    textColor: 'text-black',
+    planLink: CONSOLE_URL
   },
   {
     title: 'Developer',
@@ -42,7 +44,8 @@ const plans = [
     color: 'bg-slate-400',
     priceTag: 'text-white',
     buttonColor: 'bg-blackconstant',
-    textColor: 'text-white'
+    textColor: 'text-white',
+    planLink: STRIPE_DEV_PLAN
   },
   {
     title: 'Startup',
@@ -65,7 +68,8 @@ const plans = [
     color: 'bg-blue-500',
     priceTag: 'text-white',
     buttonColor: 'bg-blackconstant',
-    textColor: 'text-white'
+    textColor: 'text-white',
+    planLink: STRIPE_STARTUP_PLAN
   },
   {
     title: 'Pro',
@@ -88,7 +92,8 @@ const plans = [
     color: 'bg-purple-500',
     priceTag: 'text-white',
     buttonColor: 'bg-blackconstant',
-    textColor: 'text-white'
+    textColor: 'text-white',
+    planLink: STRIPE_PRO_PLAN
   },
 ];
 
@@ -98,7 +103,8 @@ export default function PricingPlansComponent() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {plans.map((plan, index) => (
           <div key={index} className={`rounded-lg border border-gray-100 ${plan.textColor}`}>
-            <div className={`p-6 rounded-t-lg border ${plan.color} ${plan.border}`}>
+            <a href={plan.planLink} target="_blank">
+            <div className={`p-6 rounded-t-lg border cursor-pointer ${plan.color} ${plan.border}`}>
               <h2 className={`text-xl font-medium mb-2 ${plan.textColor}`}>{plan.title}</h2>
               <p className={`text-3xl font-medium ${plan.priceTag}`}>{plan.price}</p>
               <p className={`mb-4 ${plan.textColor}`}>/ {plan.frequency}</p>
@@ -109,7 +115,7 @@ export default function PricingPlansComponent() {
                 {plan.tokens}
               </span>
             </div>
-
+            </a>
             <ul className="mb-4 space-y-2 py-5 px-4">
               {plan.features.map((feature, i) => (
                 <li key={i} className="flex items-center py-1">
@@ -119,9 +125,11 @@ export default function PricingPlansComponent() {
               ))}
             </ul>
             <div className='px-7 pb-6'>
-              <button className={`w-full py-2 text-white rounded-full ${plan.buttonColor}`}>
-                {plan.button}
-              </button>
+              <a href={plan.planLink} target="_blank">
+                <button className={`w-full py-2 text-white rounded-full ${plan.buttonColor}`}>
+                  {plan.button}
+                </button>
+              </a>
             </div>
            
           </div>
@@ -133,9 +141,11 @@ export default function PricingPlansComponent() {
         <div className="flex-1 mb-8 md:mb-0">
           <h2 className="text-2xl font-bold mb-2 text-white">Enterprise Plan</h2>
           <p className="mb-6 text-lg text-white">Want a custom solution?</p>
+          <a href={BOOK_CALL_URL} target="_blank" className="hover:underline transition">
           <button className="bg-white text-black font-semibold rounded-full px-8 py-3 shadow-md hover:bg-gray-200 transition">
             Contact us
           </button>
+          </a>
         </div>
         <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4 w-full px-10">
           <div>
