@@ -27,25 +27,35 @@ url = "https://api.wetrocloud.com/v2/markdown-converter/"
 
 payload = {
   'link': 'https://docs.wetrocloud.com/quickstart',
-  'resource_type': 'file'
+  'resource_type': 'web'
 }
-files=[
-
-]
 headers = {
   'Authorization': 'Token <YOUR_API_KEY>'
 }
 
-response = requests.request("POST", url, headers=headers, data=payload, files=files)
+response = requests.request("POST", url, headers=headers, data=payload)
 
 print(response.text)
 `,
-    node: `//npm install wetro-sdk\nconst axios = require('axios');\nconst FormData = require('form-data');\nlet data = new FormData();\ndata.append('link', 'https://docs.wetrocloud.com/quickstart');\ndata.append('resource_type', 'file');\nlet config = {  method: 'post',  maxBodyLength: Infinity, url: 'https://api.wetrocloud.com/v2/markdown-converter/',headers: {'Authorization': 'Token YOUR_API_KEY',     ...data.getHeaders()  },  data : data};\naxios.request(config).then((response) => {  console.log(JSON.stringify(response.data));})
-      .catch((error) => {  console.log(error);});`,
+    node: `//npm install wetro-sdk\nimport Wetrocloud from "wetro-sdk";
+
+// Initialize the Wetrocloud client
+const client = new Wetrocloud({
+  apiKey: "your_api_key"
+});
+
+// Insert a file into a Collection
+const response = await client.markDownConverter({
+  resource: "https://docs.wetrocloud.com/quickstart",
+  resource_type: "web"
+});
+
+console.log("converted to markdown", response);`,
+
     curl: `curl --location 'https://api.wetrocloud.com/v2/markdown-converter/' \
     \n--header 'Authorization: Token YOUR_API_KEY' \
     \n--form 'link="https://docs.wetrocloud.com/quickstart"' \
-    \n--form 'resource_type="file"'`,
+    \n--form 'resource_type="web"'`,
   },
   rag: {
     python: `# pip install wetro\n\nfrom wetro import Wetrocloud
@@ -241,7 +251,7 @@ export default function FeaturesSection() {
         ]}
       />
 
-      <Category
+      {/* <Category
         id="rag"
         heading="Fully Managed RAG API"
         features={[
@@ -254,7 +264,7 @@ export default function FeaturesSection() {
             children: "Ask natural‑language questions and get fully‑referenced answers instantly.",
           },
         ]}
-      />
+      /> */}
     </div>
   );
 }
