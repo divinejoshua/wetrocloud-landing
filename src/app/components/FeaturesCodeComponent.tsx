@@ -20,22 +20,18 @@ import { motion } from "framer-motion";
 // ---------------------------------------------------------------------
 const DEMO_SNIPPETS = {
   "data-extraction": {
-    python: `#pip install wetro
-import requests
+    python: `# pip install wetro
+from wetro import Wetrocloud
 
-url = "https://api.wetrocloud.com/v2/markdown-converter/"
+# Initialize the Wetrocloud client
+client = Wetrocloud(api_key="your_api_key")
 
-payload = {
-  'link': 'https://docs.wetrocloud.com/quickstart',
-  'resource_type': 'web'
-}
-headers = {
-  'Authorization': 'Token <YOUR_API_KEY>'
-}
-
-response = requests.request("POST", url, headers=headers, data=payload)
-
-print(response.text)
+# Extract structured data from a website
+extract_response = client.extract(
+   website="https://www.forbes.com/real-time-billionaires/#7583ee253d78",
+   json_schema=[{"name": "name of rich man", "networth": "amount worth"}]
+)
+print(extract_response)
 `,
     node: `//npm install wetro-sdk\nimport Wetrocloud from "wetro-sdk";
 
@@ -44,18 +40,24 @@ const client = new Wetrocloud({
   apiKey: "your_api_key"
 });
 
-// Insert a file into a Collection
-const response = await client.markDownConverter({
-  resource: "https://docs.wetrocloud.com/quickstart",
-  resource_type: "web"
+// Extract structured data from a website
+const response = await client.extract({
+  website: "https://www.forbes.com/real-time-billionaires/#7583ee253d78",
+  json_schema: [{ name: "name of rich man", networth: "amount worth" }]
 });
 
-console.log("converted to markdown", response);`,
+console.log("Data extraction:", JSON.stringify(response));`,
 
-    curl: `curl --location 'https://api.wetrocloud.com/v2/markdown-converter/' \
-    \n--header 'Authorization: Token YOUR_API_KEY' \
-    \n--form 'link="https://docs.wetrocloud.com/quickstart"' \
-    \n--form 'resource_type="web"'`,
+    curl: `curl --request POST \
+  --url https://api.wetrocloud.com/v1/data-extraction/ \
+
+  --header 'Authorization: Token <api-key>' \
+  
+  --header 'Content-Type: application/json' \
+  --data '{
+    "website": "https://www.forbes.com/real-time-billionaires/#7583ee253d78",
+    "json_schema": [{"name": "name of rich man", "networth": "amount worth"}]
+  }'`,
   },
   rag: {
     python: `# pip install wetro\n\nfrom wetro import Wetrocloud

@@ -8,7 +8,7 @@ import fanIqLogo from '@/app/assets/img/faniq-logo.png'
 import discordLogo from '@/app/assets/img/discord-social-icon.png'
 import twitterLogo from '@/app/assets/img/twitter-social-icon.png'
 import Image from 'next/image'
-import { API_REFERENCES_URL, BLOG_URL, BOOK_CALL_URL, CONSOLE_URL, DISCORD_URL, DOCS_RAG_API_URL, LINKEDIN_URL, PRICING_URL, PRIVACY_POLICY_URL, TERMS_OF_SERVICE_URL, TWITTER_URL, YOUTUBE_URL } from '../constants/constants'
+import { API_REFERENCES_URL, BLOG_URL, BOOK_CALL_URL, CONSOLE_URL, DISCORD_URL, DOCS_DATA_EXTRACTION_URL, DOCS_MARKDOWN_CONVERTER_API_URL, DOCS_RAG_API_URL, LINKEDIN_URL, PRICING_URL, PRIVACY_POLICY_URL, TERMS_OF_SERVICE_URL, TWITTER_URL, YOUTUBE_URL } from '../constants/constants'
 import Link from 'next/link'
 
 export default function FooterComponent() {
@@ -100,7 +100,8 @@ export default function FooterComponent() {
                 <div>
                 <h3 className="font-bold">Documentation</h3>
                 <ul className="mt-5 space-y-3">
-                    {/* <li><a href={DOCS_TEXT_GENERATION_API_URL} target='_blank' className="hover:underline transition">Data Extraction API</a></li> */}
+                    <li><a href={DOCS_DATA_EXTRACTION_URL} target='_blank' className="hover:underline transition">Data Extraction API</a></li>
+                    <li><a href={DOCS_MARKDOWN_CONVERTER_API_URL} target='_blank' className="hover:underline transition">Markdown Converter API</a></li>
                     <li><a href={DOCS_RAG_API_URL} target='_blank' className="hover:underline transition">RAG API</a></li>
                     <li><a href={API_REFERENCES_URL} target='_blank' className="hover:underline transition">API references</a></li>
                 </ul>
