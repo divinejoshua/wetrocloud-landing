@@ -19,7 +19,7 @@ export default function Home() {
         <HeaderComponent />
           <main className="flex-grow flex flex-col items-center justify-center mt-48 mx-auto max-width-90 mb-20">
             <h2 className="text-6xl font-medium text-blackconstant mb-4 max-w-5xl text-center">
-            Extract LLM Ready Data from <br/> any <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-transparent bg-clip-text text-6xl"> source </span>
+            Extract Structured Data from <br/> any <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-transparent bg-clip-text text-6xl"> source </span>
             </h2>
             <p className="text-gray-500 text-lg mt-5 mb-1 max-w-4xl text-center">
             Convert any unstructured data to structured LLM ready data. Power your AI applications with clean structured markdown from all types of resources. Web, File, Image, Audio, Video & Youtube.

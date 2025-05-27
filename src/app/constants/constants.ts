@@ -23,3 +23,4 @@ export const PRICING_URL = '/pricing'
 export const STRIPE_DEV_PLAN = "https://buy.stripe.com/8x2eVd7a29ft7Ggb9M7Zu01"
 export const STRIPE_STARTUP_PLAN = "https://buy.stripe.com/eVqdR91PI77l3q0b9M7Zu02"
 export const STRIPE_PRO_PLAN = "https://buy.stripe.com/bJe5kDbqiajx8Kkgu67Zu03"
+export const META_DESCRIPTION = "Convert any unstructured data to structured LLM ready data. Power your AI applications with clean structured markdown from all types of resources. Web, File, Image, Audio, Video & Youtube."

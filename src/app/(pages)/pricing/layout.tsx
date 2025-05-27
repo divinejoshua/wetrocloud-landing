@@ -1,8 +1,9 @@
 import { Metadata } from 'next'
+import { META_DESCRIPTION } from '@/app/constants/constants';
 
 
-const pageTitle : string = "Wetrocloud Pricing - Build, Deploy, and Scale with Our RAG and Agents APIs"
-const pageDescription : string = "Scale your business with our Retrieval-Augmented Generation (RAG) as a Service platform. Offering multilingual support, on-demand APIs, OCR integration, and customizable outputs, our solution enables enterprises to query their own resources and gain insights with real-time analytics. Fine-tuning and advanced AI features help you build tailored AI solutions that drive growth and efficiency."
+const pageTitle : string = "Wetrocloud Pricing - Convert any unstructured data to structured LLM ready data. Power your AI applications with clean structured markdown from all types of resources. Web, File, Image, Audio, Video & Youtube."
+const pageDescription : string = META_DESCRIPTION
 
 export const metadata: Metadata = {
   title: pageTitle,

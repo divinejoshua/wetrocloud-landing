@@ -4,13 +4,14 @@ import "./globals.css";
 import "./assets/css/style.css";
 import Script from "next/script";
 import Head from "next/head";
+import { META_DESCRIPTION } from "@/app/constants/constants";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Wetrocloud - Build, Deploy, and Scale with Our RAG and Agents APIs",
-  description: "Scale your business with our Retrieval-Augmented Generation (RAG) as a Service platform. Offering multilingual support, on-demand APIs, OCR integration, and customizable outputs, our solution enables enterprises to query their own resources and gain insights with real-time analytics. Fine-tuning and advanced AI features help you build tailored AI solutions that drive growth and efficiency.",
+  title: "Wetrocloud - Extract Structured Data from any source",
+  description: META_DESCRIPTION,
   keywords : "Wetrocloud, AI,  GPT, Artificial intelligence",
   icons: [
     { rel: 'icon', url: 'https://wetrocloud.com/favicon.ico' },
@@ -29,8 +30,8 @@ export const metadata: Metadata = {
   ],
    // Open Graph (OG) metadata
    openGraph: {
-    title: 'Wetrocloud - Build, Deploy, and Scale with Our RAG and Agents APIs',
-    description: 'Scale your business with our Retrieval-Augmented Generation (RAG) as a Service platform. Offering multilingual support, on-demand APIs, OCR integration, and customizable outputs, our solution enables enterprises to query their own resources and gain insights with real-time analytics. Fine-tuning and advanced AI features help you build tailored AI solutions that drive growth and efficiency.',
+    title: 'Wetrocloud - Extract Structured Data from any source',
+    description: META_DESCRIPTION,
     type: 'website',
     url: 'https://wetrocloud.com',
     siteName : 'Wetrocloud',
@@ -71,8 +72,8 @@ export default function RootLayout({
           <link rel="canonical" href="https://wetrocloud.com/"/>
 
           {/* Twitter OG metadata */}
-          <meta property="twitter:title" content="Wetrocloud - Build, Deploy, and Scale with Our RAG and Agents APIs" />
-          <meta property="twitter:description" content="Scale your business with our Retrieval-Augmented Generation (RAG) as a Service platform. Offering multilingual support, on-demand APIs, OCR integration, and customizable outputs, our solution enables enterprises to query their own resources and gain insights with real-time analytics. Fine-tuning and advanced AI features help you build tailored AI solutions that drive growth and efficiency." />
+          <meta property="twitter:title" content="Wetrocloud - Extract Structured Data from any source" />
+          <meta property="twitter:description" content={META_DESCRIPTION} />
           <meta property="twitter:image" content="https://wetrocloud.com/meta-banner.jpg" />
           <meta name="twitter:image:summary_photo_image:src" content="https://wetrocloud.com/meta-banner.jpg"/>
           <meta name="twitter:image:photo_image_full_size:src" content="https://wetrocloud.com/meta-banner.jpg"/>
