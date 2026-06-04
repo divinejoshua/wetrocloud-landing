@@ -60,7 +60,7 @@ export async function POST(req: NextRequest) {
 
     const xTitle = req.headers.get("X-Title");
     if (xTitle) headersToForward["X-Title"] = xTitle;
-    else headersToForward["X-Title"] = "Tabs Editor";
+    else headersToForward["X-Title"] = "Wetrocloud";
 
     // Call OpenRouter API
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
