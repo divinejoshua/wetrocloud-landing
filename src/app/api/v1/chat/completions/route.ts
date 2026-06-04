@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
     // Forward optional OpenRouter-specific headers if provided
     const referer = req.headers.get("HTTP-Referer");
     if (referer) headersToForward["HTTP-Referer"] = referer;
-    else headersToForward["HTTP-Referer"] = "https://tabseditor.com";
+    else headersToForward["HTTP-Referer"] = "https://wetrocloud.com";
 
     const xTitle = req.headers.get("X-Title");
     if (xTitle) headersToForward["X-Title"] = xTitle;
