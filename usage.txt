@@ -1,0 +1,5 @@
+#Claude Code
+export ANTHROPIC_BASE_URL="https://wetrocloud.com/api"
+export ANTHROPIC_AUTH_TOKEN="your_api_key"
+export ANTHROPIC_API_KEY="your_api_key"
+export ANTHROPIC_DEFAULT_OPUS_MODEL="wetrocloud-default-code"
