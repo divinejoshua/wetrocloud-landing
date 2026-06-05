@@ -47,6 +47,9 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // Ignore the client-provided model and always use this one
+    body.model = "google/gemini-3.1-flash-lite";
+
     // Build headers to send to OpenRouter
     const headersToForward: Record<string, string> = {
       "Content-Type": "application/json",
