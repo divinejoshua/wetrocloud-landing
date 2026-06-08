@@ -18,7 +18,7 @@ from openai import OpenAI
 
 # Point any OpenAI-compatible SDK at the Wetrocloud gateway
 client = OpenAI(
-    base_url="https://gateway.wetrocloud.com/v1",
+    base_url="https://wetrocloud.com/api/v1",
     api_key="wetro_sk_live_..."
 )
 
@@ -39,7 +39,7 @@ import OpenAI from "openai";
 
 // Point any OpenAI-compatible SDK at the Wetrocloud gateway
 const client = new OpenAI({
-  baseURL: "https://gateway.wetrocloud.com/v1",
+  baseURL: "https://wetrocloud.com/api/v1",
   apiKey: process.env.WETRO_API_KEY,
 });
 
@@ -54,7 +54,7 @@ const response = await client.chat.completions.create({
 
 console.log(response.choices[0].message.content);`,
 
-  curl: `curl https://gateway.wetrocloud.com/v1/chat/completions \\
+  curl: `curl https://wetrocloud.com/api/v1/chat/completions \\
   -H "Authorization: Bearer $WETRO_API_KEY" \\
   -H "Content-Type: application/json" \\
   -d '{

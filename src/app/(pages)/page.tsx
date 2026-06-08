@@ -192,7 +192,7 @@ export default function Home() {
             {features.map((f) => (
               <div
                 key={f.title}
-                className="group rounded-2xl border border-gray-200 bg-white p-7 transition hover:border-default hover:shadow-lg"
+                className="group bg-white p-7 transition"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-default">
                   <svg
