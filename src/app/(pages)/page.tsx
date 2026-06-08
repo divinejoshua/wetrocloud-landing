@@ -95,9 +95,8 @@ export default function Home() {
             </span>
 
             <h1 className="mt-8 text-4xl font-semibold leading-[1.1] tracking-tight text-blackconstant md:text-6xl lg:text-7xl">
-              Build custom
-              <br />
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
+              Build custom{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-4xl font-semibold text-transparent md:text-6xl lg:text-7xl">
                 AI solutions
               </span>
             </h1>
