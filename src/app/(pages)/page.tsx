@@ -113,7 +113,7 @@ export default function Home() {
                 target="_blank"
                 className="w-full rounded-full bg-blackconstant px-8 py-3.5 font-medium text-white transition hover:bg-gray-800 sm:w-auto"
               >
-                Book a consultation
+                Book a call
               </a>
               <a
                 href="#services"
