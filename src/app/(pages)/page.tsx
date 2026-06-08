@@ -92,27 +92,27 @@ export default function Home() {
 
       <main>
         {/* ---------------- Hero ---------------- */}
-        <section className="relative overflow-hidden bg-blackconstant text-white pt-40 pb-24">
+        <section className="relative overflow-hidden bg-white pt-40 pb-24">
           {/* glow */}
           <div className="pointer-events-none absolute inset-0">
-            <div className="absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-default/20 blur-[120px]" />
+            <div className="absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-default/10 blur-[120px]" />
           </div>
 
           <div className="relative mx-auto max-w-5xl px-6 text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium text-gray-300">
-              <span className="h-1.5 w-1.5 rounded-full bg-green-400" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-4 py-1.5 text-xs font-medium text-gray-600">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
               The enterprise AI gateway
             </span>
 
-            <h1 className="mt-8 text-4xl font-semibold leading-[1.1] tracking-tight md:text-6xl lg:text-7xl">
+            <h1 className="mt-8 text-4xl font-semibold leading-[1.1] tracking-tight text-blackconstant md:text-6xl lg:text-7xl">
               One API for every
               <br />
-              <span className="bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
                 AI model in production
               </span>
             </h1>
 
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-400 md:text-xl">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 md:text-xl">
               Wetrocloud routes, caches, and governs traffic to 200+ LLMs through a
               single endpoint — with enterprise-grade security, automatic failover,
               and costs you can actually predict.
@@ -122,14 +122,14 @@ export default function Home() {
               <a
                 href={CONSOLE_URL}
                 target="_blank"
-                className="w-full rounded-full bg-white px-8 py-3.5 font-medium text-black transition hover:bg-gray-200 sm:w-auto"
+                className="w-full rounded-full bg-blackconstant px-8 py-3.5 font-medium text-white transition hover:bg-gray-800 sm:w-auto"
               >
                 Start for free
               </a>
               <a
                 href={BOOK_CALL_URL}
                 target="_blank"
-                className="w-full rounded-full border border-white/20 px-8 py-3.5 font-medium text-white transition hover:bg-white/10 sm:w-auto"
+                className="w-full rounded-full border border-gray-300 px-8 py-3.5 font-medium text-blacktext transition hover:bg-gray-50 sm:w-auto"
               >
                 Book a demo
               </a>
@@ -137,16 +137,16 @@ export default function Home() {
 
             {/* Provider strip */}
             <div className="mt-16">
-              <p className="text-xs uppercase tracking-widest text-gray-500">
+              <p className="text-xs uppercase tracking-widest text-gray-400">
                 Unified access to leading model providers
               </p>
-              <div className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 opacity-80">
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
                 {providers.map((p) => (
                   <Image
                     key={p.name}
                     src={p.src}
                     alt={p.name}
-                    className="h-7 w-auto object-contain brightness-0 invert"
+                    className="h-7 w-auto object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0"
                   />
                 ))}
               </div>
@@ -155,13 +155,13 @@ export default function Home() {
         </section>
 
         {/* ---------------- Code showcase ---------------- */}
-        <section className="bg-blackconstant pb-28 text-white">
+        <section className="bg-white pb-28">
           <div className="mx-auto max-w-6xl px-6">
             <div className="mx-auto mb-12 max-w-2xl text-center">
               <h2 className="text-3xl font-semibold md:text-4xl">
                 Integrate in minutes, not migrations
               </h2>
-              <p className="mt-4 text-gray-400">
+              <p className="mt-4 text-gray-500">
                 Keep the OpenAI-compatible SDK you already use. Change one line, and
                 instantly reach every provider with routing and failover built in.
               </p>
@@ -250,16 +250,16 @@ export default function Home() {
         </section>
 
         {/* ---------------- Enterprise ---------------- */}
-        <section className="bg-blackconstant py-24 text-white">
+        <section className="bg-white py-24">
           <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 lg:grid-cols-2">
             <div>
-              <span className="text-sm font-semibold uppercase tracking-widest text-blue-400">
+              <span className="text-sm font-semibold uppercase tracking-widest text-default">
                 Built for the enterprise
               </span>
               <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
                 Security and compliance, by default
               </h2>
-              <p className="mt-4 text-gray-400">
+              <p className="mt-4 text-gray-500">
                 Wetrocloud is the trusted gateway between your applications and the
                 world&apos;s AI models. Govern access, protect sensitive data, and meet
                 your compliance obligations — without slowing teams down.
@@ -269,14 +269,14 @@ export default function Home() {
                 <a
                   href={BOOK_CALL_URL}
                   target="_blank"
-                  className="rounded-full bg-white px-7 py-3 text-center font-medium text-black transition hover:bg-gray-200"
+                  className="rounded-full bg-blackconstant px-7 py-3 text-center font-medium text-white transition hover:bg-gray-800"
                 >
                   Talk to sales
                 </a>
                 <a
                   href={DOCS_URL}
                   target="_blank"
-                  className="rounded-full border border-white/20 px-7 py-3 text-center font-medium text-white transition hover:bg-white/10"
+                  className="rounded-full border border-gray-300 px-7 py-3 text-center font-medium text-blacktext transition hover:bg-gray-50"
                 >
                   Read the docs
                 </a>
@@ -287,10 +287,10 @@ export default function Home() {
               {enterprise.map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-4"
+                  className="flex items-start gap-3 rounded-xl border border-gray-200 bg-gray-50 p-4"
                 >
                   <svg
-                    className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-400"
+                    className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-600"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={2}
@@ -302,7 +302,7 @@ export default function Home() {
                       d="M4.5 12.75l6 6 9-13.5"
                     />
                   </svg>
-                  <span className="text-sm text-gray-200">{item}</span>
+                  <span className="text-sm text-gray-700">{item}</span>
                 </li>
               ))}
             </ul>
