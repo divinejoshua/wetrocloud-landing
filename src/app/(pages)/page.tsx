@@ -2,7 +2,7 @@ import Image from "next/image";
 import HeaderComponent from "@/app/components/Header";
 import FooterComponent from "@/app/components/Footer";
 import GatewayCodeShowcase from "@/app/components/GatewayCodeShowcase";
-import { BOOK_CALL_URL, CONSOLE_URL, DOCS_URL } from "../constants/constants";
+import { BOOK_CALL_URL, DOCS_URL } from "../constants/constants";
 
 import openaiLogo from "@/app/assets/img/openai-logo.png";
 import claudeLogo from "@/app/assets/img/claude-logo.png";
@@ -102,9 +102,8 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 md:text-xl">
-              Wetrocloud designs and builds custom AI applications and automation for
-              businesses — from RAG systems and autonomous agents to integrations and
-              AI system audits. We turn your AI ambitions into production-grade systems.
+              Custom AI applications and automation for businesses — RAG systems,
+              autonomous agents, integrations, and AI audits, built for production.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
