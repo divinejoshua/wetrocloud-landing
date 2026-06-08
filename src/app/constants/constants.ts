@@ -24,4 +24,4 @@ export const PRICING_URL = '/pricing'
 export const STRIPE_DEV_PLAN = "https://buy.stripe.com/8x2eVd7a29ft7Ggb9M7Zu01"
 export const STRIPE_STARTUP_PLAN = "https://buy.stripe.com/eVqdR91PI77l3q0b9M7Zu02"
 export const STRIPE_PRO_PLAN = "https://buy.stripe.com/bJe5kDbqiajx8Kkgu67Zu03"
-export const META_DESCRIPTION = "Wetrocloud is the enterprise AI gateway: one API to access 200+ LLMs with intelligent routing, semantic caching, automatic failover, and predictable costs."
+export const META_DESCRIPTION = "Wetrocloud builds custom AI solutions for businesses — custom AI apps and integrations, RAG systems, agent automation, and AI system audits, from strategy to production."

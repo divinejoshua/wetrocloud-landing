@@ -19,69 +19,59 @@ const providers = [
 ];
 
 const stats = [
-  { value: "200+", label: "Models, one endpoint" },
-  { value: "99.99%", label: "Gateway uptime SLA" },
-  { value: "<50ms", label: "Routing overhead" },
-  { value: "40%", label: "Avg. cost reduction" },
+  { value: "End-to-end", label: "From strategy to deployment" },
+  { value: "RAG & Agents", label: "Our core specialties" },
+  { value: "200+", label: "AI models we build with" },
+  { value: "24/7", label: "Support & monitoring" },
 ];
 
 const features = [
   {
-    title: "Intelligent routing",
-    body: "Route every request to the best model by cost, latency, or quality. Load-balance across providers and regions automatically.",
-    icon: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
+    title: "Custom AI solutions & integrations",
+    body: "Bespoke AI applications built around your workflows and wired into the tools your business already runs on.",
+    icon: "M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a6.759 6.759 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 010-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.281z",
   },
   {
-    title: "Cost controls & budgets",
-    body: "Set hard spend limits per team, key, or project. Real-time usage analytics and alerts keep AI bills predictable.",
-    icon: "M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+    title: "RAG systems",
+    body: "Retrieval-augmented generation that grounds AI in your own data, so answers stay accurate, current, and source-backed.",
+    icon: "M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776",
   },
   {
-    title: "Semantic caching",
-    body: "Cut latency and spend with response caching that understands meaning, not just exact-match keys. Configurable per route.",
-    icon: "M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z",
+    title: "Agent automation & setup",
+    body: "Autonomous agents that handle multi-step work — research, operations, support — wired into your stack and monitored end to end.",
+    icon: "M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z",
   },
   {
-    title: "Automatic fallbacks",
-    body: "Define ordered fallback chains so a provider outage never takes down your product. Retries and failover happen in-flight.",
-    icon: "M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99",
-  },
-  {
-    title: "Unified observability",
-    body: "Trace every prompt, token, and dollar across providers in one dashboard. Export logs to your SIEM and data warehouse.",
-    icon: "M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z",
-  },
-  {
-    title: "Enterprise security",
-    body: "SOC 2 Type II, SSO/SAML, role-based access, and zero data retention. Deploy in your own VPC for full data residency.",
-    icon: "M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z",
+    title: "AI system audits",
+    body: "Independent review of your existing AI systems for cost, performance, security, and reliability — with a clear roadmap to improve them.",
+    icon: "M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z",
   },
 ];
 
 const enterprise = [
-  "SOC 2 Type II & GDPR compliant",
-  "SSO / SAML & SCIM provisioning",
-  "Role-based access control (RBAC)",
-  "Private VPC & on-prem deployment",
-  "99.99% uptime SLA & 24/7 support",
-  "Zero data retention by default",
+  "Senior AI engineers, not juniors",
+  "Production-grade, documented code",
+  "Security & compliance built in (SOC 2, GDPR)",
+  "Your data stays yours — zero retention",
+  "Ongoing support & maintenance",
+  "Flexible fixed-scope or retainer engagements",
 ];
 
 const steps = [
   {
     step: "01",
-    title: "Point your SDK at the gateway",
-    body: "Change one base URL. Keep the OpenAI-compatible SDK you already use — no rewrites, no new abstractions.",
+    title: "Audit & discovery",
+    body: "We map your goals, data, and existing systems — including a full AI audit where one's needed — to pinpoint the highest-impact opportunities.",
   },
   {
     step: "02",
-    title: "Choose models & policies",
-    body: "Pick from 200+ models and set routing, caching, fallback, and budget policies per team or environment.",
+    title: "Design & build",
+    body: "We architect and develop your custom solution — RAG, agents, or integrations — with your team in the loop at every milestone.",
   },
   {
     step: "03",
-    title: "Ship & govern at scale",
-    body: "Monitor spend, latency, and quality across every provider from a single pane of glass with full audit trails.",
+    title: "Deploy & support",
+    body: "We ship to production, hand over documentation, and keep your systems monitored, maintained, and continuously improving.",
   },
 ];
 
@@ -101,44 +91,43 @@ export default function Home() {
           <div className="relative mx-auto max-w-5xl px-6 text-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-4 py-1.5 text-xs font-medium text-gray-600">
               <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-              The enterprise AI gateway
+              Custom AI development & automation
             </span>
 
             <h1 className="mt-8 text-4xl font-semibold leading-[1.1] tracking-tight text-blackconstant md:text-6xl lg:text-7xl">
-              One API for every
+              Build custom
               <br />
               <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
-                AI model in production
+                AI solutions
               </span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 md:text-xl">
-              Wetrocloud routes, caches, and governs traffic to 200+ LLMs through a
-              single endpoint — with enterprise-grade security, automatic failover,
-              and costs you can actually predict.
+              Wetrocloud designs and builds custom AI applications and automation for
+              businesses — from RAG systems and autonomous agents to integrations and
+              AI system audits. We turn your AI ambitions into production-grade systems.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
-                href={CONSOLE_URL}
+                href={BOOK_CALL_URL}
                 target="_blank"
                 className="w-full rounded-full bg-blackconstant px-8 py-3.5 font-medium text-white transition hover:bg-gray-800 sm:w-auto"
               >
-                Start for free
+                Book a consultation
               </a>
               <a
-                href={BOOK_CALL_URL}
-                target="_blank"
+                href="#services"
                 className="w-full rounded-full border border-gray-300 px-8 py-3.5 font-medium text-blacktext transition hover:bg-gray-50 sm:w-auto"
               >
-                Book a demo
+                Explore our services
               </a>
             </div>
 
             {/* Provider strip */}
             <div className="mt-16">
               <p className="text-xs uppercase tracking-widest text-gray-400">
-                Unified access to leading model providers
+                We build with the world&apos;s leading AI models
               </p>
               <div className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
                 {providers.map((p) => (
@@ -154,16 +143,20 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------------- Code showcase ---------------- */}
+        {/* ---------------- Product: AI Gateway ---------------- */}
         <section className="bg-white pb-28">
           <div className="mx-auto max-w-6xl px-6">
             <div className="mx-auto mb-12 max-w-2xl text-center">
-              <h2 className="text-3xl font-semibold md:text-4xl">
-                Integrate in minutes, not migrations
+              <span className="text-sm font-semibold uppercase tracking-widest text-default">
+                Our product
+              </span>
+              <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
+                The Wetrocloud AI Gateway
               </h2>
               <p className="mt-4 text-gray-500">
-                Keep the OpenAI-compatible SDK you already use. Change one line, and
-                instantly reach every provider with routing and failover built in.
+                Alongside our custom builds, we offer the Wetrocloud AI Gateway — one
+                API to access 200+ LLMs with intelligent routing, caching, and
+                failover. Use it in your own stack, or let us build on it for you.
               </p>
             </div>
             <GatewayCodeShowcase />
@@ -184,19 +177,19 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------------- Features ---------------- */}
-        <section className="mx-auto max-w-6xl px-6 py-24">
+        {/* ---------------- Services ---------------- */}
+        <section id="services" className="mx-auto max-w-6xl px-6 py-24 scroll-mt-24">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-semibold md:text-4xl">
-              The control plane for production AI
+              What we build
             </h2>
             <p className="mt-4 text-gray-500">
-              Everything platform teams need to run LLMs reliably, securely, and
-              cost-effectively at enterprise scale.
+              End-to-end AI development — from strategy and audits to fully deployed
+              systems your team can rely on.
             </p>
           </div>
 
-          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid gap-6 md:grid-cols-2">
             {features.map((f) => (
               <div
                 key={f.title}
@@ -227,11 +220,11 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-6">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-semibold md:text-4xl">
-                Live in three steps
+                How we work
               </h2>
               <p className="mt-4 text-gray-500">
-                From first request to organization-wide rollout without re-architecting
-                your stack.
+                A clear, collaborative process that takes you from idea to a
+                production AI system — without the guesswork.
               </p>
             </div>
 
@@ -254,15 +247,15 @@ export default function Home() {
           <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 lg:grid-cols-2">
             <div>
               <span className="text-sm font-semibold uppercase tracking-widest text-default">
-                Built for the enterprise
+                Why teams choose us
               </span>
               <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
-                Security and compliance, by default
+                A partner you can build on
               </h2>
               <p className="mt-4 text-gray-500">
-                Wetrocloud is the trusted gateway between your applications and the
-                world&apos;s AI models. Govern access, protect sensitive data, and meet
-                your compliance obligations — without slowing teams down.
+                We&apos;re an AI engineering team that ships. Businesses trust Wetrocloud
+                to design, build, and maintain the AI systems they depend on — with
+                security and reliability built in from day one.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">

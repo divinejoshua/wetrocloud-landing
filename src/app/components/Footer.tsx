@@ -62,10 +62,10 @@ export default function FooterComponent() {
 
         {/* CTA */}
         <div className="block bg-gray-100 mt-10 max-w-7xl py-20 px-3 mx-auto rounded-lg">
-            <h3 className="text-4xl font-medium text-center">Get started with Wetrocloud</h3>
-            <p className="mt-7 text-gray-500 text-center max-w-xl mx-auto">Get started with Wetrocloud today and unleash the full potential of your data extraction and data‑driven RAG applications.</p>
+            <h3 className="text-4xl font-medium text-center">Let&apos;s build your AI solution</h3>
+            <p className="mt-7 text-gray-500 text-center max-w-xl mx-auto">Tell us what you&apos;re trying to build. We&apos;ll help you scope it, design it, and ship a custom AI system your business can rely on.</p>
             <div className="flex items-center justify-center space-x-4 mt-5">
-              <a href={CONSOLE_URL} target="_blank"><button className="w-full sm:w-auto bg-default text-white px-6 py-3 rounded-full hover:bg-blue-600 transition mt-3">Get started for free</button></a>
+              <a href={BOOK_CALL_URL} target="_blank"><button className="w-full sm:w-auto bg-default text-white px-6 py-3 rounded-full hover:bg-blue-600 transition mt-3">Book a consultation</button></a>
             </div>
         </div>
 

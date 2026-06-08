@@ -10,7 +10,7 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Wetrocloud — The Enterprise AI Gateway",
+  title: "Wetrocloud — Build Custom AI Solutions",
   description: META_DESCRIPTION,
   keywords : "Wetrocloud, AI, Coding Agents, Model Usage, Cost Optimization, Engineering Teams",
   icons: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   ],
    // Open Graph (OG) metadata
    openGraph: {
-    title: 'Wetrocloud — The Enterprise AI Gateway',
+    title: 'Wetrocloud — Build Custom AI Solutions',
     description: META_DESCRIPTION,
     type: 'website',
     url: 'https://wetrocloud.com',
@@ -72,7 +72,7 @@ export default function RootLayout({
           <link rel="canonical" href="https://wetrocloud.com/"/>
 
           {/* Twitter OG metadata */}
-          <meta property="twitter:title" content="Wetrocloud — The Enterprise AI Gateway" />
+          <meta property="twitter:title" content="Wetrocloud — Build Custom AI Solutions" />
           <meta property="twitter:description" content={META_DESCRIPTION} />
           <meta property="twitter:image" content="https://wetrocloud.com/meta-banner.jpg" />
           <meta name="twitter:image:summary_photo_image:src" content="https://wetrocloud.com/meta-banner.jpg"/>
