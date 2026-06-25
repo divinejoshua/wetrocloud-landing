@@ -108,13 +108,6 @@ export default function Home() {
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
-                href={BOOK_CALL_URL}
-                target="_blank"
-                className="w-full rounded-full bg-blackconstant px-8 py-3.5 font-medium text-white transition hover:bg-gray-800 sm:w-auto"
-              >
-                Book a call
-              </a>
-              <a
                 href="#services"
                 className="w-full rounded-full border border-gray-300 px-8 py-3.5 font-medium text-blacktext transition hover:bg-gray-50 sm:w-auto"
               >
